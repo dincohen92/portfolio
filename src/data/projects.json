@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "slate-auto",
+    "number": "01",
+    "title": "EV Auto App",
+    "subtitle": "Slate Auto",
+    "role": "Product Designer",
+    "year": "2026",
+    "description": "3 day design sprint to create a concept for an electric vehicle app focused on user experience and branding.",
+    "body": "Slate Auto is a concept for an electric vehicle app that I designed during a 3-day sprint. The goal was to create a user experience that made EV ownership feel seamless and enjoyable, while also maintaining a strong brand identity.\n\nI started by researching the pain points of current EV apps and identifying opportunities for improvement. I then sketched out user flows and wireframes, focusing on features like range tracking, charging station navigation, and maintenance reminders.\n\nThe visual design was inspired by the sleek, modern industrial minimalist aesthetics of the Slate truck, using a bolmonochrome color palette and clean typography. I created a high-fidelity prototype in Figma to showcase the interactions and branding.",
+    "tags": ["Figma", "UX Design", "UI Design", "Full-Stack"],
+    "externalHref": "https://www.figma.com/deck/wwcOdZRNnSyc76F0QsUOG1",
+    "coverBg": "#00ffff",
+    "images": [],
+    "figmaEmbed": "https://embed.figma.com/proto/dm7dXUQfkTDdGt0nmsZoNu/Final-Mockup?page-id=0%3A1&node-id=26-78&p=f&viewport=-6%2C547%2C0.26&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3&embed-host=share"
+  },
+  {
+    "slug": "plan-with-coco",
+    "number": "02",
+    "title": "AI Wedding Planner",
+    "subtitle": "PlanwithCoCo.com",
+    "role": "CTO & Lead Designer",
+    "year": "2026",
+    "description": "Built the full technical infrastructure and led UX design for an AI-powered wedding planning platform. From architecture decisions to user testing and deployment.",
+    "body": "PlanwithCoCo is an AI-powered wedding planning platform designed to simplify one of the most complex personal projects a couple undertakes. As CTO and Lead Designer, I owned the product end-to-end — from the initial system architecture to the final user flows.\n\nThe platform uses large language models to generate personalized planning timelines, vendor recommendations, and budget breakdowns based on each couple's inputs. I designed the conversation-first UI to feel approachable and human, not transactional.\n\nOn the engineering side, I built the full-stack infrastructure with Next.js, integrated OpenAI's API, and deployed on Vercel with a Supabase backend. I also ran multiple rounds of user testing to refine the onboarding experience.",
+    "tags": ["Next.js", "AI/LLM", "UX Design", "Full-Stack"],
+    "externalHref": "https://planwithcoco.com",
+    "coverBg": "#ff00ff",
+    "images": [
+      "/images/plan-with-coco/1.png",
+      "/images/plan-with-coco/2.png",
+      "/images/plan-with-coco/3.png"
+    ],
+    "figmaEmbed": null
+  },
+  {
+    "slug": "zira",
+    "number": "03",
+    "title": "Zira",
+    "subtitle": "Production Dashboard",
+    "role": "Design Lead & ML Contributor",
+    "year": "2025",
+    "description": "Led marketing and branding initiatives while contributing to computer vision AI modeling for a production analytics dashboard.",
+    "body": "Zira is a production analytics platform that uses computer vision to monitor manufacturing lines in real time. I joined as Design Lead and took ownership of the brand identity, marketing site, and dashboard UX — while also contributing to the computer vision pipeline.\n\nThe dashboard needed to surface complex sensor and camera data in a way that line operators could act on quickly. I designed a high-density data layout with customizable views and alert hierarchies, tested with operators on the floor.\n\nOn the ML side, I contributed to labeling pipelines and model evaluation workflows for the anomaly detection system. The dual role gave me insight into how the data was produced and how it should be presented.",
+    "tags": ["Branding", "Dashboard Design", "Computer Vision", "Marketing"],
+    "externalHref": null,
+    "coverBg": "#ffff00",
+    "images": [],
+    "figmaEmbed": null
+  },
+  {
+    "slug": "apex-semi",
+    "number": "04",
+    "title": "Apex Semi",
+    "subtitle": "Acquired by Cadence, 2024",
+    "role": "Frontend Engineer & Designer",
+    "year": "2022–2023",
+    "description": "Created a customer-facing Django dashboard with LDAP security integration for a semiconductor company. The company was acquired by Cadence Design Systems in 2024.",
+    "body": "Apex Semi is a semiconductor IP company that needed a secure, customer-facing dashboard for licensing and analytics. I built the frontend in Django with a custom LDAP authentication layer, giving enterprise clients role-based access to their data.\n\nThe design challenge was balancing the density of technical data with a clean, professional interface that matched the expectations of engineers at large chip companies. I worked closely with the backend team to design the data model alongside the UI.\n\nApex Semi was acquired by Cadence Design Systems in 2024, validating the product's technical foundation.",
+    "tags": ["Django", "LDAP", "Frontend", "Enterprise"],
+    "externalHref": null,
+    "coverBg": "#000000",
+    "images": [],
+    "figmaEmbed": null
+  }
+]
