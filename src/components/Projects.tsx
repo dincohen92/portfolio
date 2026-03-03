@@ -33,59 +33,51 @@ function isColorDark(hex: string): boolean {
   const r = parseInt(h.substring(0, 2), 16);
   const g = parseInt(h.substring(2, 4), 16);
   const b = parseInt(h.substring(4, 6), 16);
-  return (r * 299 + g * 587 + b * 114) / 1000 < 128;
+  return (r * 299 + g * 587 + b * 114) / 1000 < 64;
 }
 
 // ─── Card ─────────────────────────────────────────────────────────────────────
 function CardContent({ project }: { project: Project }) {
   const dark = isColorDark(project.coverBg);
+  const textMain  = dark ? "text-white"      : "text-foreground";
+  const textSub   = dark ? "text-white/60"   : "text-foreground/60";
+  const textFaint = dark ? "text-white/40"   : "text-foreground/40";
+  const border    = dark ? "border-white/25" : "border-foreground/25";
 
   return (
     <Link href={`/projects/${project.slug}`} className="relative flex flex-col h-full">
-      <div
-        className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-[1.05] bg-center bg-cover"
-        style={
-          project.images[0]
-            ? { backgroundImage: `url(${project.images[0]})` }
-            : { backgroundColor: project.coverBg }
-        }
-      />
-      <div className="absolute inset-0 bg-foreground opacity-0 group-hover:opacity-90 transition-opacity duration-500" />
+      {/* Base: always solid color */}
+      <div className="absolute inset-0" style={{ backgroundColor: project.coverBg }} />
 
-      {/* Default label — text color adapts to background brightness */}
+      {/* Image: fades in at low opacity on hover */}
+      {project.images[0] && (
+        <div
+          className="absolute inset-0 bg-center bg-cover opacity-0 group-hover:opacity-25 transition-opacity duration-700 ease-out"
+          style={{ backgroundImage: `url(${project.images[0]})` }}
+        />
+      )}
+
+      {/* Default label */}
       <div className="relative mt-auto p-6 transition-opacity duration-300 group-hover:opacity-0">
-        <span className={`text-xs font-mono block mb-1.5 ${dark ? "text-white/50" : "text-foreground/40"}`}>
-          {project.number}
-        </span>
-        <h3 className={`text-xl font-medium tracking-tight ${dark ? "text-white" : "text-foreground"}`}>
-          {project.title}
-        </h3>
-        <p className={`text-sm mt-0.5 ${dark ? "text-white/60" : "text-muted-foreground"}`}>{project.subtitle}</p>
+        <span className={`text-xs font-mono block mb-1.5 ${textFaint}`}>{project.number}</span>
+        <h3 className={`text-xl font-medium tracking-tight ${textMain}`}>{project.title}</h3>
+        <p className={`text-sm mt-0.5 ${textSub}`}>{project.subtitle}</p>
       </div>
 
       {/* Hover reveal */}
       <div className="absolute inset-0 flex flex-col justify-between p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
         <div className="flex items-start justify-between">
-          <span className="text-xs font-mono text-background/50">{project.number}</span>
-          <span className="text-sm text-background/60">↗</span>
+          <span className={`text-xs font-mono ${textFaint}`}>{project.number}</span>
+          <span className={`text-sm ${textSub}`}>↗</span>
         </div>
         <div>
-          <h3 className="text-xl font-medium tracking-tight text-background mb-1">
-            {project.title}
-          </h3>
-          <p className="text-sm text-background/60 mb-3">{project.subtitle}</p>
-          <p className="text-xs text-background/40 uppercase tracking-widest mb-4">
-            {project.role}
-          </p>
-          <p className="text-sm text-background/80 leading-relaxed mb-5">
-            {project.description}
-          </p>
+          <h3 className={`text-xl font-medium tracking-tight ${textMain} mb-1`}>{project.title}</h3>
+          <p className={`text-sm ${textSub} mb-3`}>{project.subtitle}</p>
+          <p className={`text-xs ${textFaint} uppercase tracking-widest mb-4`}>{project.role}</p>
+          <p className={`text-sm ${textSub} leading-relaxed mb-5`}>{project.description}</p>
           <div className="flex flex-wrap gap-2">
             {project.tags.map((tag) => (
-              <span
-                key={tag}
-                className="text-xs border border-background/25 px-2.5 py-0.5 text-background/55"
-              >
+              <span key={tag} className={`text-xs border ${border} px-2.5 py-0.5 ${textFaint}`}>
                 {tag}
               </span>
             ))}

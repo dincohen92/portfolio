@@ -11,7 +11,11 @@
     "tags": ["Figma", "UX Design", "UI Design", "Full-Stack"],
     "externalHref": "https://www.figma.com/deck/wwcOdZRNnSyc76F0QsUOG1",
     "coverBg": "#00ffff",
-    "images": [],
+    "images": [
+      "/images/slate-auto/1.webp",
+      "/images/slate-auto/2.avif",
+      "/images/slate-auto/3.avif"
+    ],
     "figmaEmbed": "https://embed.figma.com/proto/dm7dXUQfkTDdGt0nmsZoNu/Final-Mockup?page-id=0%3A1&node-id=26-78&p=f&viewport=-6%2C547%2C0.26&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3&embed-host=share"
   },
   {
