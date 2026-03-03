@@ -12,7 +12,7 @@ export default function About() {
           </h2>
           <p className="text-muted-foreground leading-relaxed">
             I studied Industrial Design at San Francisco State University, then
-            expanded into software engineering through Hack Reactor's intensive
+            expanded into software engineering through Hack Reactor&apos;s intensive
             bootcamp in Seattle. That combination of disciplines shapes how I
             work — I can take a product from concept to deployment.
           </p>

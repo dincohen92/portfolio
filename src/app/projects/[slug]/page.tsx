@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import projects from "@/data/projects.json";
 
@@ -146,11 +147,12 @@ export default async function ProjectPage({ params }: Props) {
                     </p>
                   </div>
                   {section.image && (
-                    <div className="flex-1 w-full">
-                      <img
+                    <div className="flex-1 w-full relative aspect-[4/3]">
+                      <Image
                         src={section.image}
                         alt={section.heading}
-                        className="w-full aspect-[4/3] object-cover"
+                        fill
+                        className="object-cover"
                       />
                     </div>
                   )}
