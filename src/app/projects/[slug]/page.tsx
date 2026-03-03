@@ -46,14 +46,20 @@ export default async function ProjectPage({ params }: Props) {
 
       <main className="pt-16">
         {/* Cover */}
-        <div
-          className="w-full h-[50vh] min-h-[320px] bg-center bg-cover"
-          style={
-            project.images[0]
-              ? { backgroundImage: `url(${project.images[0]})` }
-              : { backgroundColor: project.coverBg }
-          }
-        />
+        {project.images[0] ? (
+          <div className="w-full flex h-[50vh] min-h-[400px]">
+            <div className="flex-1" style={{ backgroundColor: project.coverBg }} />
+            <div
+              className="flex-1 bg-center bg-cover"
+              style={{ backgroundImage: `url(${project.images[0]})` }}
+            />
+          </div>
+        ) : (
+          <div
+            className="w-full h-[25vh] min-h-[200px]"
+            style={{ backgroundColor: project.coverBg }}
+          />
+        )}
 
         {/* Content */}
         <div className="section-padding py-20 max-w-5xl mx-auto">
@@ -84,7 +90,7 @@ export default async function ProjectPage({ params }: Props) {
           </div>
 
           {/* Meta */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pb-16 border-b border-border mb-16">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pb-16 border-b border-border">
             <div>
               <p className="text-xs text-muted-foreground uppercase tracking-widest mb-2">
                 Role
@@ -113,18 +119,45 @@ export default async function ProjectPage({ params }: Props) {
               </div>
             </div>
           </div>
-
-          {/* Body */}
-          <div className="max-w-2xl">
-            {project.body.split("\n\n").map((paragraph, i) => (
-              <p
-                key={i}
-                className="text-muted-foreground leading-relaxed mb-6 last:mb-0"
-              >
-                {paragraph}
-              </p>
-            ))}
-          </div>
+          
+          {/* Sections */}
+          {project.sections.map((section, i) => {
+            const flip = i % 2 !== 0;
+            return (
+              <div key={i} className="border-t border-border pt-16 pb-4">
+                <div
+                  className={`flex flex-col ${
+                    section.image
+                      ? flip
+                        ? "md:flex-row-reverse"
+                        : "md:flex-row"
+                      : ""
+                  } gap-12 md:gap-20 items-center`}
+                >
+                  <div className={section.image ? "md:flex-1" : "max-w-2xl"}>
+                    <span className="text-xs font-mono text-muted-foreground uppercase tracking-widest mb-4 block">
+                      {section.label}
+                    </span>
+                    <h2 className="text-2xl md:text-3xl font-medium tracking-tight mb-5 leading-tight">
+                      {section.heading}
+                    </h2>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {section.body}
+                    </p>
+                  </div>
+                  {section.image && (
+                    <div className="flex-1 w-full">
+                      <img
+                        src={section.image}
+                        alt={section.heading}
+                        className="w-full aspect-[4/3] object-cover"
+                      />
+                    </div>
+                  )}
+                </div>
+              </div>
+            );
+          })}
         </div>
 
         {/* Figma prototype embed */}
