@@ -121,6 +121,24 @@ export default async function ProjectPage({ params }: Props) {
             </div>
           </div>
           
+          {/* Figma prototype embed */}
+          {project.figmaEmbed && (
+            <div className="border-t border-border section-padding py-20">
+              <div className="max-w-5xl mx-auto">
+                <p className="text-xs text-muted-foreground uppercase tracking-widest mb-10">
+                  Prototype
+                </p>
+                <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                  <iframe
+                    className="absolute inset-0 w-full h-full border border-border"
+                    src={project.figmaEmbed}
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* Sections */}
           {project.sections.map((section, i) => {
             const flip = i % 2 !== 0;
@@ -155,23 +173,7 @@ export default async function ProjectPage({ params }: Props) {
           })}
         </div>
 
-        {/* Figma prototype embed */}
-        {project.figmaEmbed && (
-          <div className="border-t border-border section-padding py-20">
-            <div className="max-w-5xl mx-auto">
-              <p className="text-xs text-muted-foreground uppercase tracking-widest mb-10">
-                Prototype
-              </p>
-              <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
-                <iframe
-                  className="absolute inset-0 w-full h-full border border-border"
-                  src={project.figmaEmbed}
-                  allowFullScreen
-                />
-              </div>
-            </div>
-          </div>
-        )}
+
 
         {/* Footer nav */}
         <div className="border-t border-border section-padding py-8 flex items-center justify-between text-sm text-muted-foreground">
