@@ -1,8 +1,8 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 import type { Metadata } from "next";
 import projects from "@/data/projects.json";
+import { ZoomImage } from "@/components/ZoomImage";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -147,14 +147,7 @@ export default async function ProjectPage({ params }: Props) {
                     </p>
                   </div>
                   {section.image && (
-                    <div className="flex-1 w-full relative aspect-[4/3]">
-                      <Image
-                        src={section.image}
-                        alt={section.heading}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
+                    <ZoomImage src={section.image} alt={section.heading} />
                   )}
                 </div>
               </div>

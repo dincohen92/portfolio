@@ -2,38 +2,56 @@
   {
     "slug": "slate-auto",
     "number": "01",
-    "title": "EV Auto App",
-    "subtitle": "Slate Auto",
+    "title": "Slate Auto",
+    "subtitle": "EV Auto App Design",
     "role": "Product Designer",
     "year": "2026",
     "description": "3 day design sprint to create a concept for an electric vehicle app focused on user experience and branding.",
-    "tags": ["Figma", "UX Design", "UI Design", "Full-Stack"],
+    "tags": [
+      "Figma",
+      "UX Design",
+      "UI Design",
+      "Product Design"
+    ],
     "externalHref": "https://www.figma.com/deck/wwcOdZRNnSyc76F0QsUOG1",
-    "coverBg": "#00ffff",
+    "coverBg": "#000000",
     "images": [
       "/images/slate-auto/1.webp",
       "/images/slate-auto/2.avif",
+      "/images/slate-auto/slate prototype.png",
       "/images/slate-auto/3.avif"
     ],
     "figmaEmbed": "https://embed.figma.com/proto/dm7dXUQfkTDdGt0nmsZoNu/Final-Mockup?page-id=0%3A1&node-id=26-78&p=f&viewport=-6%2C547%2C0.26&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3&embed-host=share",
     "sections": [
       {
+        "label": "Problem",
+        "heading": "New modes of transportation require new interfaces.",
+        "body": "Electric vehicle drivers not only expect, but rely on a high level of technology in their automotive products. Although Slate position's itself as the affordable truck, it still needs to meet these high standards.",
+        "image": "/images/slate-auto/3.avif"
+      },
+      {
         "label": "Question",
-        "heading": "What makes EV ownership feel effortless?",
-        "body": "Slate Auto is a concept for an electric vehicle app that I designed during a 3-day sprint. The goal was to create a user experience that made EV ownership feel seamless and enjoyable, while also maintaining a strong brand identity.",
-        "image": "/images/slate-auto/1.webp"
+        "heading": "What would an EV app look like if it was designed with the same attention to personality and affordability as the truck?",
+        "body": "How might Slate design a mobile-first experience that reinforces confidence at every interaction while maintaining the minimalist Slate aesthetic?",
+        "image": "/images/slate-auto/2.avif"
+      },
+      {
+        "label": "Research",
+        "heading": "Three days, no shortcuts — just users, pain points, and flows.",
+        "body": "I started by auditing existing EV apps and mapping the core jobs to be done: charge management, range tracking, trip planning, and maintenance scheduling. I sketched user flows and wireframes, stress-testing each screen against real driver scenarios before any visual design began.",
+        "image": "/images/slate-auto/Slate user research.png"
       },
       {
         "label": "Proposition",
-        "heading": "Map the journey before designing the destination.",
-        "body": "I started by researching the pain points of current EV apps and identifying opportunities for improvement. I then sketched out user flows and wireframes, focusing on features like range tracking, charging station navigation, and maintenance reminders.",
-        "image": "/images/slate-auto/2.avif"
+        "heading": "Every interaction should reduce friction, not add it.",
+        "body": "The app needed to lead with the most relevant information — current charge level, nearest charging station, next service due — and get out of the way. I proposed a single-surface dashboard that adapts to the driver's context rather than asking them to navigate to it.",
+        "image": "/images/slate-auto/slate design.png"
       },
       {
         "label": "Solution",
         "heading": "Bold, minimal, and unmistakably Slate.",
-        "body": "The visual design was inspired by the sleek, modern industrial minimalist aesthetics of the Slate truck, using a monochrome color palette and clean typography. I created a high-fidelity prototype in Figma to showcase the interactions and branding.",
-        "image": "/images/slate-auto/3.avif"
+        "body": "The visual design mirrors the truck's industrial identity: monochrome palette, heavy typography, and confident negative space. I built a high-fidelity Figma prototype over three days that demonstrates the core flows end-to-end — from onboarding through daily driving use.",
+        "image": "/images/slate-auto/slate prototype.png"
       }
     ]
   },
@@ -45,7 +63,12 @@
     "role": "CTO & Lead Designer",
     "year": "2026",
     "description": "Built the full technical infrastructure and led UX design for an AI-powered wedding planning platform. From architecture decisions to user testing and deployment.",
-    "tags": ["Next.js", "AI/LLM", "UX Design", "Full-Stack"],
+    "tags": [
+      "Next.js",
+      "AI/LLM",
+      "UX Design",
+      "Full-Stack"
+    ],
     "externalHref": "https://planwithcoco.com",
     "coverBg": "#ff00ff",
     "images": [
@@ -56,21 +79,33 @@
     "figmaEmbed": null,
     "sections": [
       {
-        "label": "Question",
-        "heading": "Why is wedding planning still so overwhelming?",
-        "body": "PlanwithCoCo is an AI-powered wedding planning platform designed to simplify one of the most complex personal projects a couple undertakes. As CTO and Lead Designer, I owned the product end-to-end — from the initial system architecture to the final user flows.",
+        "label": "Problem",
+        "heading": "Wedding planning has no good starting point.",
+        "body": "Couples face a wall of decisions with no roadmap: venue before or after guest list? Budget before or after vendors? Most couples don't know what they don't know, and the tools available — spreadsheets, Pinterest boards, generic apps — make the overwhelm worse, not better.",
         "image": "/images/plan-with-coco/1.png"
       },
       {
-        "label": "Proposition",
-        "heading": "AI should feel like a helpful friend, not a form.",
-        "body": "The platform uses large language models to generate personalized planning timelines, vendor recommendations, and budget breakdowns based on each couple's inputs. I designed the conversation-first UI to feel approachable and human, not transactional.",
+        "label": "Question",
+        "heading": "What if planning your wedding felt like talking to someone who'd done it before?",
+        "body": "The core question wasn't 'how do we organize wedding tasks?' — it was 'how do we make couples feel confident from day one?' That reframe shifted the product from a productivity tool to a guided experience, and it changed everything about how we designed it.",
         "image": "/images/plan-with-coco/2.png"
+      },
+      {
+        "label": "Research",
+        "heading": "We mapped the full planning journey before writing a line of code.",
+        "body": "I conducted user interviews with recently married couples to map where stress peaked, where decisions clustered, and what information people wished they'd had earlier. Those insights drove every decision in the onboarding flow — from the first question we ask to the order we introduce each planning category.",
+        "image": null
+      },
+      {
+        "label": "Proposition",
+        "heading": "AI does the complexity. The interface does the warmth.",
+        "body": "Large language models generate personalized timelines, vendor shortlists, and budget breakdowns based on each couple's inputs. But the interface needed to feel human — conversational, unhurried, and emotionally aware of what this moment means in someone's life.",
+        "image": null
       },
       {
         "label": "Solution",
         "heading": "Full-stack infrastructure for a full-life moment.",
-        "body": "On the engineering side, I built the full-stack infrastructure with Next.js, integrated OpenAI's API, and deployed on Vercel with a Supabase backend. I also ran multiple rounds of user testing to refine the onboarding experience.",
+        "body": "I built the platform on Next.js with a Supabase backend, integrated OpenAI's API for the AI planning layer, and deployed on Vercel. Multiple rounds of user testing shaped the onboarding into something that consistently earns the reaction: 'I wish I'd had this.'",
         "image": "/images/plan-with-coco/3.png"
       }
     ]
@@ -83,28 +118,45 @@
     "role": "Design Lead & ML Contributor",
     "year": "2025",
     "description": "Led marketing and branding initiatives while contributing to computer vision AI modeling for a production analytics dashboard.",
-    "tags": ["Branding", "Dashboard Design", "Computer Vision", "Marketing"],
+    "tags": [
+      "Branding",
+      "Dashboard Design",
+      "Computer Vision",
+      "Marketing"
+    ],
     "externalHref": null,
     "coverBg": "#ffff00",
     "images": [],
     "figmaEmbed": null,
     "sections": [
       {
+        "label": "Problem",
+        "heading": "Manufacturing operators were drowning in data with no way to prioritize.",
+        "body": "Zira's computer vision system generated thousands of anomaly signals per shift. Without a well-designed interface, operators couldn't distinguish critical failures from noise — which meant the technology's value was invisible to the people it was supposed to help.",
+        "image": null
+      },
+      {
         "label": "Question",
-        "heading": "How do you turn raw sensor data into operator clarity?",
-        "body": "Zira is a production analytics platform that uses computer vision to monitor manufacturing lines in real time. I joined as Design Lead and took ownership of the brand identity, marketing site, and dashboard UX — while also contributing to the computer vision pipeline.",
+        "heading": "How do you design for a world where every second of downtime costs money?",
+        "body": "The question wasn't 'how do we display sensor data?' — it was 'what does an operator need to see in the first three seconds of looking at a screen?' Designing for high-stakes, high-velocity decisions required a fundamentally different approach than typical dashboard design.",
+        "image": null
+      },
+      {
+        "label": "Research",
+        "heading": "I spent time on the factory floor before opening Figma.",
+        "body": "I embedded with line operators to understand their actual workflow: how they scanned for issues, what caused them to act, and where current tooling fell short. That context shaped every information hierarchy decision in the dashboard — and it couldn't have been learned from a brief.",
         "image": null
       },
       {
         "label": "Proposition",
-        "heading": "Understand the data at the source before designing for it.",
-        "body": "The dashboard needed to surface complex sensor and camera data in a way that line operators could act on quickly. I designed a high-density data layout with customizable views and alert hierarchies, tested with operators on the floor.",
+        "heading": "Design the interface where the data is born.",
+        "body": "I contributed directly to the ML labeling pipeline and model evaluation workflow — which meant I understood the data at its source. That dual perspective let me design not just for what operators needed to see, but for what the system was actually capable of surfacing accurately.",
         "image": null
       },
       {
         "label": "Solution",
-        "heading": "A dual-role approach: design and machine learning.",
-        "body": "On the ML side, I contributed to labeling pipelines and model evaluation workflows for the anomaly detection system. The dual role gave me insight into how the data was produced and how it should be presented.",
+        "heading": "A high-density dashboard built for the factory floor.",
+        "body": "The resulting dashboard featured customizable alert hierarchies, camera feed integration, and at-a-glance anomaly summaries tested with operators in real production environments. The brand and marketing site I built alongside it positioned Zira as a credible enterprise product in a crowded industrial AI market.",
         "image": null
       }
     ]
@@ -117,28 +169,45 @@
     "role": "Frontend Engineer & Designer",
     "year": "2022–2023",
     "description": "Created a customer-facing Django dashboard with LDAP security integration for a semiconductor company. The company was acquired by Cadence Design Systems in 2024.",
-    "tags": ["Django", "LDAP", "Frontend", "Enterprise"],
+    "tags": [
+      "Django",
+      "LDAP",
+      "Frontend",
+      "Enterprise"
+    ],
     "externalHref": null,
     "coverBg": "#000000",
     "images": [],
     "figmaEmbed": null,
     "sections": [
       {
+        "label": "Problem",
+        "heading": "Enterprise licensing dashboards were built for IT teams, not chip engineers.",
+        "body": "Apex Semi's customers — engineers at major semiconductor companies — needed access to complex licensing and analytics data. The existing tooling was either too generic or too opaque. Trust is hard to build when the interface doesn't speak your users' language.",
+        "image": null
+      },
+      {
         "label": "Question",
-        "heading": "How do you build trust with enterprise chip engineers?",
-        "body": "Apex Semi is a semiconductor IP company that needed a secure, customer-facing dashboard for licensing and analytics. I built the frontend in Django with a custom LDAP authentication layer, giving enterprise clients role-based access to their data.",
+        "heading": "How do you design for engineers who understand the system better than you do?",
+        "body": "Chip engineers are precise, skeptical of unnecessary UI chrome, and accustomed to dense data. The question wasn't 'how do we make this approachable?' — it was 'how do we make this credible and efficient for people who will notice every wrong decision?'",
+        "image": null
+      },
+      {
+        "label": "Research",
+        "heading": "The data model and the design co-evolved.",
+        "body": "I worked closely with the backend team from day one — not after the API was built. By understanding the licensing data model as it was being designed, I could make UI decisions that made sense for how the data actually behaved, not how I wished it would.",
         "image": null
       },
       {
         "label": "Proposition",
-        "heading": "Design the data model alongside the interface.",
-        "body": "The design challenge was balancing the density of technical data with a clean, professional interface that matched the expectations of engineers at large chip companies. I worked closely with the backend team to design the data model alongside the UI.",
+        "heading": "Match the density of the data with the precision of the interface.",
+        "body": "The design language was deliberate and restrained: no unnecessary visual decoration, clear information hierarchy, and role-based views that surface only what each user type needs. Security wasn't bolted on — it was woven into every interaction through the LDAP integration.",
         "image": null
       },
       {
         "label": "Solution",
         "heading": "Secure, precise, and proven — acquired by Cadence.",
-        "body": "Apex Semi was acquired by Cadence Design Systems in 2024, validating the product's technical foundation and the quality of the engineering and design work that went into it.",
+        "body": "The dashboard shipped with enterprise-grade LDAP authentication, giving clients role-based access to their licensing and analytics data. Apex Semi was acquired by Cadence Design Systems in 2024, validating the product's technical foundation and the quality of the work that went into it.",
         "image": null
       }
     ]
