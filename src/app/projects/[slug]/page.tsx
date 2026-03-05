@@ -1,8 +1,11 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import projects from "@/data/projects.json";
 import { ZoomImage } from "@/components/ZoomImage";
+
+const ModelViewer = dynamic(() => import("@/components/ModelViewer"), { ssr: false });
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -47,14 +50,8 @@ export default async function ProjectPage({ params }: Props) {
 
       <main className="pt-16">
         {/* Cover */}
-        {project.images[0] ? (
-          <div className="w-full flex h-[50vh] min-h-[400px]">
-            <div className="flex-1" style={{ backgroundColor: project.coverBg }} />
-            <div
-              className="flex-1 bg-center bg-cover"
-              style={{ backgroundImage: `url(${project.images[0]})` }}
-            />
-          </div>
+        {"model3d" in project && project.model3d ? (
+          <ModelViewer src={project.model3d} bg={project.coverBg} />
         ) : (
           <div
             className="w-full h-[25vh] min-h-[200px]"

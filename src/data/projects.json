@@ -15,6 +15,7 @@
     ],
     "externalHref": "https://www.figma.com/deck/wwcOdZRNnSyc76F0QsUOG1",
     "coverBg": "#000000",
+    "model3d": "/3d-models/slate-truck.glb",
     "images": [
       "/images/slate-auto/1.webp",
       "/images/slate-auto/2.avif",
@@ -165,18 +166,18 @@
     "slug": "apex-semi",
     "number": "04",
     "title": "Apex Semi",
-    "subtitle": "Acquired by Cadence, 2024",
+    "subtitle": "Batch Computing Software Dashboard",
     "role": "Frontend Engineer & Designer",
-    "year": "2022–2023",
-    "description": "Created a customer-facing Django dashboard with LDAP security integration for a semiconductor company. The company was acquired by Cadence Design Systems in 2024.",
+    "year": "2022–2024",
+    "description": "Created a customer-facing Django dashboard with LDAP security integration for a semiconductor company. Apex Semi was acquired by Cadence Design Systems in 2024.",
     "tags": [
       "Django",
+      "Datatables",
       "LDAP",
-      "Frontend",
-      "Enterprise"
+      "Frontend"
     ],
     "externalHref": null,
-    "coverBg": "#000000",
+    "coverBg": "#00ffff",
     "images": [],
     "figmaEmbed": null,
     "sections": [
