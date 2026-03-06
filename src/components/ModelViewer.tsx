@@ -2,8 +2,26 @@
 
 import { useRef, useEffect, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { useGLTF } from "@react-three/drei";
+import { useGLTF, useProgress } from "@react-three/drei";
 import * as THREE from "three";
+
+function LoaderOverlay({ bg }: { bg: string }) {
+  const { active } = useProgress();
+  if (!active) return null;
+  return (
+    <div
+      className="absolute inset-0 flex items-center justify-center z-10"
+      style={{ backgroundColor: bg }}
+    >
+      <img
+        src="/logo.png"
+        alt=""
+        style={{ width: 48, height: 48, animation: "spin 2s linear infinite" }}
+      />
+      <style>{`@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }`}</style>
+    </div>
+  );
+}
 
 function Model({ src }: { src: string }) {
   const { scene } = useGLTF(src);
@@ -48,9 +66,10 @@ function Model({ src }: { src: string }) {
 export default function ModelViewer({ src, bg }: { src: string; bg: string }) {
   return (
     <div
-      className="w-full h-[60vh] min-h-[480px]"
+      className="relative w-full h-[60vh] min-h-[480px]"
       style={{ backgroundColor: bg }}
     >
+      <LoaderOverlay bg={bg} />
       <Canvas
         camera={{ position: [2, 0, 0], fov: 40 }}
         gl={{ alpha: true, antialias: true }}
