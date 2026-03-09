@@ -1,8 +1,10 @@
+import { label } from "three/tsl";
+
 const links = [
   { label: "Email", value: "dincohen92@gmail.com", href: "mailto:dincohen92@gmail.com" },
   { label: "LinkedIn", value: "linkedin.com/in/dincohen", href: "https://linkedin.com/in/dincohen/" },
+  { label: "GitHub", value: "github.com/dincohen92", href: "https://github.com/dincohen92" },
   { label: "Instagram", value: "@dinco.design", href: "https://instagram.com/dinco.design/" },
-  { label: "Behance", value: "behance.net/dincodesign", href: "https://behance.net/dincodesign" },
 ];
 
 export default function Contact() {
@@ -17,7 +19,7 @@ export default function Contact() {
             Let&apos;s work together.
           </h2>
           <p className="mt-6 text-muted-foreground leading-relaxed">
-            Open to design, product, and engineering opportunities. Say hello.
+            Open to product design opportunities. Please reach out.
           </p>
         </div>
 
@@ -26,7 +28,7 @@ export default function Contact() {
             <a
               key={link.label}
               href={link.href}
-              target={link.href.startsWith("mailto") ? undefined : "_blank"}
+              target={link.href.startsWith("mailto") ? undefined : "dincohen92@gmail.com"}
               rel="noopener noreferrer"
               className="group flex items-center justify-between py-5 hover:opacity-60 transition-opacity"
             >
