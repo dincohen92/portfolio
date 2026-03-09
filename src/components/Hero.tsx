@@ -1,18 +1,18 @@
 "use client";
 import { useEffect, useState } from "react";
 
-type NoteId = "din-cohen" | "experienced" | "designers-eye";
+type NoteId = "din-cohen" | "experienced" | "humans";
 
 const NOTES: Record<NoteId, { color: string; note: string }> = {
   "din-cohen": {
     color: "#00ffff",
     note: "When not designing, you'll find me hiking the trails of the Pacific Northwest, staring at buildings, and sometimes even climbing them.",
   },
-  experienced: {
+  "experienced": {
     color: "#ff00ff",
     note: "Led design and engineering at Apex Semi (acquired by Cadence), built AI infrastructure for PlanwithCoCo, and contributed to computer vision at Zira.",
   },
-  "designers-eye": {
+  "humans": {
     color: "#ffff00",
     note: "Trained in Industrial Design at SFSU, where I learned to think in systems, materials, and human behavior long before the AI takeover.",
   },
@@ -88,8 +88,8 @@ export default function Hero() {
           <Phrase id="din-cohen" onHover={setActiveNote}>Din Cohen</Phrase>
           {" "}is a product designer{" "}
           <Phrase id="experienced" onHover={setActiveNote}>experienced</Phrase>
-          {" "}at building digital products with a{" "}
-          <Phrase id="designers-eye" onHover={setActiveNote}>designer&apos;s eye</Phrase>
+          {" "}in simplifying complex problems with simple solutions for{" "}
+          <Phrase id="humans" onHover={setActiveNote}>humans</Phrase>
           .
         </p>
       </div>

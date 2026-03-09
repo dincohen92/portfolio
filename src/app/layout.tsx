@@ -8,15 +8,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Din Cohen — Product Designer & Engineer",
+  title: "Din Cohen — Product Designer",
   description:
-    "San Francisco-based product designer and engineer specializing in user-focused design and full-stack development.",
+    "Seattle based product designer and engineer specializing in user-focused design and full-stack development.",
   openGraph: {
-    title: "Din Cohen — Product Designer & Engineer",
+    title: "Din Cohen — Product Designer",
     description:
-      "San Francisco-based product designer and engineer specializing in user-focused design and full-stack development.",
+      "Seattle based product designer and engineer specializing in user-focused design and full-stack development.",
     url: "https://dincohen.com",
-    siteName: "Din Cohen",
+    siteName: "Dinco",
   },
 };
 

@@ -162,7 +162,9 @@
     ],
     "externalHref": null,
     "coverBg": "#ffff00",
-    "images": [],
+    "images": [
+      "/images/zira/zira_logo_padded_black.png"
+    ],
     "figmaEmbed": null,
     "features": [],
     "sections": [
@@ -215,7 +217,10 @@
     ],
     "externalHref": "https://www.linkedin.com/company/apex-semi/about/",
     "coverBg": "#00ffff",
-    "images": [],
+    "images": [
+      "/images/apex-semi/ChatGPT Image Mar 9, 2026, 01_34_43 PM.png",
+      "/images/apex-semi/Screenshot 2026-01-28 at 9.46.50â¯PM.png"
+    ],
     "figmaEmbed": null,
     "features": [
       {
@@ -250,7 +255,7 @@
         "label": "Problem",
         "heading": "Enterprise licensing dashboards were built for IT teams, not chip engineers.",
         "body": "Apex Semi's customers — engineers at major semiconductor companies — needed access to complex licensing and analytics data. The existing tooling was either too generic or too opaque. Trust is hard to build when the interface doesn't speak your users' language.",
-        "image": "/images/apex-semi/1175_apex_semiconductor_inc_638568939911957581_200.png"
+        "image": null
       },
       {
         "label": "Question",

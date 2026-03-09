@@ -8,13 +8,13 @@ export default function About() {
             About
           </p>
           <h2 className="text-3xl md:text-4xl font-medium leading-tight tracking-tight mb-8">
-            Designer who codes.<br />Engineer who designs.
+            Designer who codes &amp;<br/> Engineer who designs
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            I studied Industrial Design at San Francisco State University, then
-            expanded into software engineering through Hack Reactor&apos;s intensive
-            bootcamp in Seattle. That combination of disciplines shapes how I
-            work — I can take a product from concept to deployment.
+            Studying Industrial Design and transitioning into software engineering 
+            has led me to the crossroads of design and code where 
+            I can bridge the gap between the technical and the simple.
+            I thrive working with teams that value user-focused design and elegant engineering.
           </p>
         </div>
 
@@ -22,7 +22,7 @@ export default function About() {
         <div className="flex flex-col gap-10">
           <div>
             <p className="text-xs text-muted-foreground uppercase tracking-widest mb-4">
-              Beginnings — Israel &amp; Northern California
+              Beginnings — San Francisco
             </p>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>Industrial Design, San Francisco State University</li>
@@ -37,18 +37,18 @@ export default function About() {
             </p>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>Hack Reactor — software engineering bootcamp</li>
-              <li>Apex Semi — UI/UX &amp; frontend engineering</li>
-              <li>Zira — marketing, branding &amp; computer vision AI</li>
+              <li>Apex Semi — fullstack software engineering</li>
+              <li>Zira — user experience, marketing &amp; computer vision AI</li>
             </ul>
           </div>
           <div className="w-full h-px bg-border" />
           <div>
             <p className="text-xs text-muted-foreground uppercase tracking-widest mb-4">
-              Now — San Francisco
+              Now
             </p>
             <p className="text-sm text-muted-foreground">
-              Focused on user-centered product design — bridging the gap between
-              beautiful interfaces and solid engineering.
+              Product Design
+              Bridging the gap between beautiful interfaces and complex engineering.
             </p>
           </div>
         </div>
