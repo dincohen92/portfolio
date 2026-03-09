@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useEffect, Suspense } from "react";
+import Image from "next/image";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useGLTF, useProgress } from "@react-three/drei";
 import * as THREE from "three";
@@ -13,10 +14,12 @@ function LoaderOverlay({ bg }: { bg: string }) {
       className="absolute inset-0 flex items-center justify-center z-10"
       style={{ backgroundColor: bg }}
     >
-      <img
+      <Image
         src="/logo.png"
         alt=""
-        style={{ width: 48, height: 48, animation: "spin 2s linear infinite" }}
+        width={48}
+        height={48}
+        style={{ animation: "spin 2s linear infinite" }}
       />
       <style>{`@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }`}</style>
     </div>

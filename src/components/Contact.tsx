@@ -1,5 +1,3 @@
-import { label } from "three/tsl";
-
 const links = [
   { label: "Email", value: "dincohen92@gmail.com", href: "mailto:dincohen92@gmail.com" },
   { label: "LinkedIn", value: "linkedin.com/in/dincohen", href: "https://linkedin.com/in/dincohen/" },
