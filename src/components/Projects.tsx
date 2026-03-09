@@ -53,7 +53,7 @@ function CardContent({ project }: { project: Project }) {
       {project.images[0] && (
         <div
           className="absolute inset-0 bg-center bg-cover opacity-0 group-hover:opacity-25 transition-opacity duration-700 ease-out"
-          style={{ backgroundImage: `url(${project.images[0]})` }}
+          style={{ backgroundImage: `url("${project.images[0]}")` }}
         />
       )}
 
