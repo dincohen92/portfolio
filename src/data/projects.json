@@ -23,6 +23,7 @@
       "/images/slate-auto/3.avif"
     ],
     "figmaEmbed": "https://embed.figma.com/proto/dm7dXUQfkTDdGt0nmsZoNu/Final-Mockup?page-id=0%3A1&node-id=26-78&p=f&viewport=-6%2C547%2C0.26&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3&embed-host=share",
+    "features": [],
     "sections": [
       {
         "label": "Problem",
@@ -59,16 +60,18 @@
   {
     "slug": "plan-with-coco",
     "number": "02",
-    "title": "AI Wedding Planner",
-    "subtitle": "PlanwithCoCo.com",
+    "title": "Plan With CoCo",
+    "subtitle": "AI Wedding Planning Assistant",
     "role": "CTO & Lead Designer",
     "year": "2026",
     "description": "Built the full technical infrastructure and led UX design for an AI-powered wedding planning platform. From architecture decisions to user testing and deployment.",
     "tags": [
       "Next.js",
       "AI/LLM",
-      "UX Design",
-      "Full-Stack"
+      "UI/UX Design",
+      "Database",
+      "CI/CD",
+      "Auth"
     ],
     "externalHref": "https://planwithcoco.com",
     "coverBg": "#ff00ff",
@@ -78,38 +81,70 @@
       "/images/plan-with-coco/3.png"
     ],
     "figmaEmbed": null,
+    "features": [
+      {
+        "category": "Tech Stack",
+        "items": [
+          "Next.js",
+          "Supabase",
+          "Claude API",
+          "OpenAI API",
+          "Vercel"
+        ]
+      },
+      {
+        "category": "App Features",
+        "items": [
+          "Integrated LLM Chat",
+          "Auto help-desk ticket generation via LLM",
+          "Couple onboarding flow",
+          "Vendor shortlist & handoff sheet",
+          "Google OAuth"
+        ]
+      },
+      {
+        "category": "Responsibilities",
+        "items": [
+          "Full infrastructure architecture",
+          "UX design & user testing",
+          "CI/CD pipeline",
+          "Auth integration"
+        ]
+      }
+    ],
     "sections": [
       {
         "label": "Problem",
-        "heading": "Wedding planning has no good starting point.",
-        "body": "Couples face a wall of decisions with no roadmap: venue before or after guest list? Budget before or after vendors? Most couples don't know what they don't know, and the tools available — spreadsheets, Pinterest boards, generic apps — make the overwhelm worse, not better.",
-        "image": "/images/plan-with-coco/1.png"
+        "heading": "Wedding planning as a couple can be stressful.",
+        "body": "Couples face a wall of decisions with no roadmap: From finding venues to napkin rentals, most couples don't know what they don't know, and the tools available are spreadsheets, Pinterest boards, generic apps. ",
+        "image": null
       },
       {
         "label": "Question",
         "heading": "What if planning your wedding felt like talking to someone who'd done it before?",
-        "body": "The core question wasn't 'how do we organize wedding tasks?' — it was 'how do we make couples feel confident from day one?' That reframe shifted the product from a productivity tool to a guided experience, and it changed everything about how we designed it.",
-        "image": "/images/plan-with-coco/2.png"
+        "body": "The core question wasn't 'how do we organize wedding tasks?' it was 'how do we make couples feel confident and connected from day one?' That reframe shifted the product from a productivity tool to a guided experience.",
+        "image": "/images/plan-with-coco/3.png"
       },
       {
         "label": "Research",
         "heading": "We mapped the full planning journey before writing a line of code.",
-        "body": "I conducted user interviews with recently married couples to map where stress peaked, where decisions clustered, and what information people wished they'd had earlier. Those insights drove every decision in the onboarding flow — from the first question we ask to the order we introduce each planning category.",
-        "image": null
+        "body": "I conducted user interviews with recently married couples to map where stress peaked, where decisions clustered, and what information people wished they'd had earlier.",
+        "image": "/images/plan-with-coco/Screenshot 2026-03-08 at 12.40.20â¯PM.png"
       },
       {
         "label": "Proposition",
-        "heading": "AI does the complexity. The interface does the warmth.",
-        "body": "Large language models generate personalized timelines, vendor shortlists, and budget breakdowns based on each couple's inputs. But the interface needed to feel human — conversational, unhurried, and emotionally aware of what this moment means in someone's life.",
-        "image": null
+        "heading": "AI deals with complexity but we handle the emotions.",
+        "body": "Large language models generate personalized timelines, vendor shortlists, and budget breakdowns based on each couple's inputs. But the interface needed to feel human, conversational, unhurried, and emotionally aware of what this moment means in someone's life. That meant listening to peoples stories and designing an app that helps couples through the process instead of overloading them with AI slop.",
+        "image": "/images/plan-with-coco/2.png"
       },
       {
         "label": "Solution",
-        "heading": "Full-stack infrastructure for a full-life moment.",
-        "body": "I built the platform on Next.js with a Supabase backend, integrated OpenAI's API for the AI planning layer, and deployed on Vercel. Multiple rounds of user testing shaped the onboarding into something that consistently earns the reaction: 'I wish I'd had this.'",
-        "image": "/images/plan-with-coco/3.png"
+        "heading": "A big decision requires a lot of research",
+        "body": "The outcome is a resource that helps couples research vendors and ideas, compile them into a handoff sheet for wedding coordinators, and prepare for their wedding days. ",
+        "image": "/images/plan-with-coco/1.png"
       }
-    ]
+    ],
+    "model3d": "/3d-models/heart.glb"
   },
   {
     "slug": "zira",
@@ -129,6 +164,7 @@
     "coverBg": "#ffff00",
     "images": [],
     "figmaEmbed": null,
+    "features": [],
     "sections": [
       {
         "label": "Problem",
@@ -160,32 +196,61 @@
         "body": "The resulting dashboard featured customizable alert hierarchies, camera feed integration, and at-a-glance anomaly summaries tested with operators in real production environments. The brand and marketing site I built alongside it positioned Zira as a credible enterprise product in a crowded industrial AI market.",
         "image": null
       }
-    ]
+    ],
+    "model3d": "/3d-models/zira-camera.glb"
   },
   {
     "slug": "apex-semi",
     "number": "04",
-    "title": "Apex Semi",
-    "subtitle": "Batch Computing Software Dashboard",
-    "role": "Frontend Engineer & Designer",
+    "title": "Apex Semi (now Cadence)",
+    "subtitle": "Dashboard for Batch Computing Software",
+    "role": "Full Stack Software Engineer",
     "year": "2022–2024",
     "description": "Created a customer-facing Django dashboard with LDAP security integration for a semiconductor company. Apex Semi was acquired by Cadence Design Systems in 2024.",
     "tags": [
-      "Django",
-      "Datatables",
-      "LDAP",
-      "Frontend"
+      "Full Stack",
+      "Software Engineering",
+      "Web development",
+      "Enterprise"
     ],
-    "externalHref": null,
+    "externalHref": "https://www.linkedin.com/company/apex-semi/about/",
     "coverBg": "#00ffff",
     "images": [],
     "figmaEmbed": null,
+    "features": [
+      {
+        "category": "Tech Stack",
+        "items": [
+          "Django",
+          "LDAP",
+          "SQL",
+          "datatables"
+        ]
+      },
+      {
+        "category": "App Features",
+        "items": [
+          "LDAP authentication and verification",
+          "Django full stack web application",
+          "Datatables UI integration",
+          "jQuerie for complex SQL searches"
+        ]
+      },
+      {
+        "category": "Responsibilities",
+        "items": [
+          "Lead user interviews to drive new features",
+          "Design UI/UX flows",
+          "Develop front and back end features"
+        ]
+      }
+    ],
     "sections": [
       {
         "label": "Problem",
         "heading": "Enterprise licensing dashboards were built for IT teams, not chip engineers.",
         "body": "Apex Semi's customers — engineers at major semiconductor companies — needed access to complex licensing and analytics data. The existing tooling was either too generic or too opaque. Trust is hard to build when the interface doesn't speak your users' language.",
-        "image": null
+        "image": "/images/apex-semi/1175_apex_semiconductor_inc_638568939911957581_200.png"
       },
       {
         "label": "Question",
@@ -203,7 +268,7 @@
         "label": "Proposition",
         "heading": "Match the density of the data with the precision of the interface.",
         "body": "The design language was deliberate and restrained: no unnecessary visual decoration, clear information hierarchy, and role-based views that surface only what each user type needs. Security wasn't bolted on — it was woven into every interaction through the LDAP integration.",
-        "image": null
+        "image": "/images/apex-semi/Screenshot 2026-01-28 at 9.46.50â¯PM.png"
       },
       {
         "label": "Solution",
@@ -211,6 +276,7 @@
         "body": "The dashboard shipped with enterprise-grade LDAP authentication, giving clients role-based access to their licensing and analytics data. Apex Semi was acquired by Cadence Design Systems in 2024, validating the product's technical foundation and the quality of the work that went into it.",
         "image": null
       }
-    ]
+    ],
+    "model3d": "/3d-models/computer.glb"
   }
 ]

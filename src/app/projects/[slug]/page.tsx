@@ -118,6 +118,26 @@ export default async function ProjectPage({ params }: Props) {
             </div>
           </div>
           
+          {/* Features */}
+          {"features" in project && Array.isArray(project.features) && project.features.length > 0 && (
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-16 border-b border-border">
+              {(project.features as { category: string; items: string[] }[]).map((group) => (
+                <div key={group.category}>
+                  <p className="text-xs text-muted-foreground uppercase tracking-widest mb-3">
+                    {group.category}
+                  </p>
+                  <ul className="space-y-1">
+                    {group.items.map((item) => (
+                      <li key={item} className="text-sm text-foreground">
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          )}
+
           {/* Figma prototype embed */}
           {project.figmaEmbed && (
             <div className="border-t border-border section-padding py-20">

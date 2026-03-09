@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useEffect, Suspense } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useGLTF, useProgress } from "@react-three/drei";
 import * as THREE from "three";
 
@@ -25,6 +25,7 @@ function LoaderOverlay({ bg }: { bg: string }) {
 
 function Model({ src }: { src: string }) {
   const { scene } = useGLTF(src);
+  const { camera } = useThree();
   const groupRef = useRef<THREE.Group>(null);
   const mouse = useRef({ x: 0, y: 0 });
   const rotation = useRef({ x: 0, y: 0 });
@@ -37,7 +38,15 @@ function Model({ src }: { src: string }) {
     const scale = 2 / maxDim;
     scene.scale.setScalar(scale);
     scene.position.sub(center.multiplyScalar(scale));
-  }, [scene]);
+
+    // Auto-fit camera to the normalized bounding sphere
+    const sphere = new THREE.Sphere();
+    new THREE.Box3().setFromObject(scene).getBoundingSphere(sphere);
+    const fov = (camera as THREE.PerspectiveCamera).fov * (Math.PI / 180);
+    const distance = (sphere.radius / Math.tan(fov / 2)) * 1.2;
+    camera.position.set(0, 0, distance);
+    camera.lookAt(sphere.center);
+  }, [scene, camera]);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -71,13 +80,13 @@ export default function ModelViewer({ src, bg }: { src: string; bg: string }) {
     >
       <LoaderOverlay bg={bg} />
       <Canvas
-        camera={{ position: [2, 0, 0], fov: 40 }}
+        camera={{ fov: 40 }}
         gl={{ alpha: true, antialias: true }}
         style={{ background: "transparent" }}
       >
         <ambientLight intensity={0.6} />
-        <directionalLight position={[4, 6, 4]} intensity={2} />
-        <directionalLight position={[-4, -2, -3]} intensity={2} color="#6080ff" />
+        <directionalLight position={[4, 6, 4]} intensity={4} />
+        <directionalLight position={[-4, -2, -3]} intensity={4} color="#6080ff" />
         <Suspense fallback={null}>
           <Model src={src} />
         </Suspense>
