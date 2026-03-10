@@ -40,41 +40,39 @@ function isColorDark(hex: string): boolean {
 function CardContent({ project }: { project: Project }) {
   const dark = isColorDark(project.coverBg);
   const textMain  = dark ? "text-white"      : "text-foreground";
-  const textSub   = dark ? "text-white/60"   : "text-foreground/60";
-  const textFaint = dark ? "text-white/40"   : "text-foreground/40";
-  const border    = dark ? "border-white/25" : "border-foreground/25";
+  const textSub   = dark ? "text-white/60"   : "text-foreground/80";
+  const textFaint = dark ? "text-white/40"   : "text-foreground/60";
+  const border    = dark ? "border-white/25" : "border-foreground/40";
 
   return (
     <Link href={`/projects/${project.slug}`} className="relative flex flex-col h-full">
       {/* Base: always solid color */}
       <div className="absolute inset-0" style={{ backgroundColor: project.coverBg }} />
 
-      {/* Image: fades in at low opacity on hover */}
+      {/* Image: fades in on hover */}
       {project.images[0] && (
         <div
-          className="absolute inset-0 bg-center bg-cover opacity-0 group-hover:opacity-25 transition-opacity duration-700 ease-out"
+          className="absolute inset-0 bg-center bg-cover opacity-0 group-hover:opacity-40 transition-opacity duration-700 ease-out"
           style={{ backgroundImage: `url("${project.images[0]}")` }}
         />
       )}
 
-      {/* Default label */}
+      {/* Default label — number + name only */}
       <div className="relative mt-auto p-6 transition-opacity duration-300 group-hover:opacity-0">
         <span className={`text-xs font-mono block mb-1.5 ${textFaint}`}>{project.number}</span>
         <h3 className={`text-xl font-medium tracking-tight ${textMain}`}>{project.title}</h3>
-        <p className={`text-sm mt-0.5 ${textSub}`}>{project.subtitle}</p>
       </div>
 
-      {/* Hover reveal */}
+      {/* Hover reveal — number, name, role, year, tags */}
       <div className="absolute inset-0 flex flex-col justify-between p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
         <div className="flex items-start justify-between">
           <span className={`text-xs font-mono ${textFaint}`}>{project.number}</span>
           <span className={`text-sm ${textSub}`}>↗</span>
         </div>
         <div>
-          <h3 className={`text-xl font-medium tracking-tight ${textMain} mb-1`}>{project.title}</h3>
-          <p className={`text-sm ${textSub} mb-3`}>{project.subtitle}</p>
-          <p className={`text-xs ${textFaint} uppercase tracking-widest mb-4`}>{project.role}</p>
-          <p className={`text-sm ${textSub} leading-relaxed mb-5`}>{project.description}</p>
+          <h3 className={`text-xl font-medium tracking-tight ${textMain} mb-2`}>{project.title}</h3>
+          <p className={`text-xs ${textFaint} uppercase tracking-widest mb-1`}>{project.role}</p>
+          <p className={`text-xs font-mono ${textFaint} mb-4`}>{project.year}</p>
           <div className="flex flex-wrap gap-2">
             {project.tags.map((tag) => (
               <span key={tag} className={`text-xs border ${border} px-2.5 py-0.5 ${textFaint}`}>

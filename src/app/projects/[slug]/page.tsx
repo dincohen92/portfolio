@@ -116,6 +116,12 @@ export default async function ProjectPage({ params }: Props) {
                 ))}
               </div>
             </div>
+            <div className="col-span-2 md:col-span-4">
+              <p className="text-xs text-muted-foreground uppercase tracking-widest mb-2">
+                Description
+              </p>
+              <p className="text-sm leading-relaxed">{project.description}</p>
+            </div>
           </div>
           
           {/* Features */}

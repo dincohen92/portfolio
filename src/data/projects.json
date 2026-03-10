@@ -39,27 +39,231 @@
       },
       {
         "label": "Research",
-        "heading": "Three days, no shortcuts — just users, pain points, and flows.",
-        "body": "I started by auditing existing EV apps and mapping the core jobs to be done: charge management, range tracking, trip planning, and maintenance scheduling. I sketched user flows and wireframes, stress-testing each screen against real driver scenarios before any visual design began.",
+        "heading": "Three days to research, audit, design, and finalize",
+        "body": "After defining the project guidelines and sprint deadlines, deep research on Slate's competitors revealed EV owner's pain points with flagship electric vehicles.",
         "image": "/images/slate-auto/Slate user research.png"
       },
       {
         "label": "Proposition",
-        "heading": "Every interaction should reduce friction, not add it.",
-        "body": "The app needed to lead with the most relevant information — current charge level, nearest charging station, next service due — and get out of the way. I proposed a single-surface dashboard that adapts to the driver's context rather than asking them to navigate to it.",
+        "heading": "Every interaction should reduce friction, and build trust",
+        "body": "The app needed to lead with the most relevant information and shift as the user journey progressed. I proposed a single-surface dashboard that adapts to the driver's context depending on the proximity t the truck.",
         "image": "/images/slate-auto/slate design.png"
       },
       {
         "label": "Solution",
         "heading": "Bold, minimal, and unmistakably Slate.",
-        "body": "The visual design mirrors the truck's industrial identity: monochrome palette, heavy typography, and confident negative space. I built a high-fidelity Figma prototype over three days that demonstrates the core flows end-to-end — from onboarding through daily driving use.",
+        "body": "The visual design mirrors the truck's industrial identity: monochrome palette, heavy typography, and confident negative space. I built a high-fidelity Figma prototype that demonstrates the core flows.",
         "image": "/images/slate-auto/slate prototype.png"
       }
     ]
   },
   {
-    "slug": "plan-with-coco",
+    "slug": "apex-semi",
     "number": "02",
+    "title": "Apex Semi (now Cadence)",
+    "subtitle": "Dashboard for Batch Computing Software",
+    "role": "Full Stack Software Engineer",
+    "year": "2022–2024",
+    "description": "Created a customer-facing Django dashboard with LDAP security integration for a semiconductor company. Apex Semi was acquired by Cadence Design Systems in 2024.",
+    "tags": [
+      "Full Stack",
+      "Software Engineering",
+      "Web development",
+      "Enterprise"
+    ],
+    "externalHref": "https://www.linkedin.com/company/apex-semi/about/",
+    "coverBg": "#00ffff",
+    "images": [
+      "/images/apex-semi/ChatGPT Image Mar 9, 2026, 01_34_43 PM.png",
+      "/images/apex-semi/Screenshot 2026-01-28 at 9.46.50â¯PM.png"
+    ],
+    "figmaEmbed": null,
+    "features": [
+      {
+        "category": "Tech Stack",
+        "items": [
+          "Django",
+          "LDAP",
+          "SQL",
+          "datatables"
+        ]
+      },
+      {
+        "category": "App Features",
+        "items": [
+          "LDAP authentication and verification",
+          "Django full stack web application",
+          "Datatables UI integration",
+          "jQuerie for complex SQL searches"
+        ]
+      },
+      {
+        "category": "Responsibilities",
+        "items": [
+          "Lead user interviews to drive new features",
+          "Design UI/UX flows",
+          "Develop front and back end features"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "label": "Problem",
+        "heading": "Enterprise licensing dashboards were built for IT teams, not chip engineers.",
+        "body": "Apex Semi's customers — engineers at major semiconductor companies — needed access to complex licensing and analytics data. The existing tooling was either too generic or too opaque. Trust is hard to build when the interface doesn't speak your users' language.",
+        "image": null
+      },
+      {
+        "label": "Question",
+        "heading": "How do you design for engineers who understand the system better than you do?",
+        "body": "Chip engineers are precise, skeptical of unnecessary UI chrome, and accustomed to dense data. The question wasn't 'how do we make this approachable?' — it was 'how do we make this credible and efficient for people who will notice every wrong decision?'",
+        "image": null
+      },
+      {
+        "label": "Research",
+        "heading": "The data model and the design co-evolved.",
+        "body": "I worked closely with the backend team from day one — not after the API was built. By understanding the licensing data model as it was being designed, I could make UI decisions that made sense for how the data actually behaved, not how I wished it would.",
+        "image": null
+      },
+      {
+        "label": "Proposition",
+        "heading": "Match the density of the data with the precision of the interface.",
+        "body": "The design language was deliberate and restrained: no unnecessary visual decoration, clear information hierarchy, and role-based views that surface only what each user type needs. Security wasn't bolted on — it was woven into every interaction through the LDAP integration.",
+        "image": "/images/apex-semi/Screenshot 2026-01-28 at 9.46.50â¯PM.png"
+      },
+      {
+        "label": "Solution",
+        "heading": "Secure, precise, and proven — acquired by Cadence.",
+        "body": "The dashboard shipped with enterprise-grade LDAP authentication, giving clients role-based access to their licensing and analytics data. Apex Semi was acquired by Cadence Design Systems in 2024, validating the product's technical foundation and the quality of the work that went into it.",
+        "image": null
+      }
+    ],
+    "model3d": "/3d-models/computer.glb"
+  },
+  {
+    "slug": "zira",
+    "number": "03",
+    "title": "Zira",
+    "subtitle": "Production Dashboard",
+    "role": "Design Lead & ML Contributor",
+    "year": "2025",
+    "description": "Led marketing and branding initiatives while contributing to computer vision AI modeling for a production analytics dashboard.",
+    "tags": [
+      "Branding",
+      "Dashboard Design",
+      "Computer Vision",
+      "Marketing"
+    ],
+    "externalHref": null,
+    "coverBg": "#000000",
+    "images": [
+      "/images/zira/white.png"
+    ],
+    "figmaEmbed": null,
+    "features": [],
+    "sections": [
+      {
+        "label": "Problem",
+        "heading": "Manufacturing plants are either struggling to get metrics on production or are drowning in spreadsheets of data.",
+        "body": "Manufacturers like lumber yards are running machines all day and are content counting production by hand even though there are more efficient methods. ",
+        "image": "/images/zira/Lumbar Yard Industry.jpg"
+      },
+      {
+        "label": "Question",
+        "heading": "Users don't like change.",
+        "body": "How do you convince a blue collar industry that an AI technology can help them produce more?",
+        "image": "/images/zira/bldrs-example.png"
+      },
+      {
+        "label": "Research",
+        "heading": "I spent time on the factory floor before opening Figma.",
+        "body": "We stood with line operators to understand their actual workflow: how they scanned for issues, what caused them to act, and where current processes fell short.",
+        "image": "/images/zira/WhatsApp Image 2026-03-09 at 16.59.29.jpeg"
+      },
+      {
+        "label": "Proposition",
+        "heading": "Design the for users not for yourself",
+        "body": "This perspective let me design not just for what metrics looks good on a monitor, but for what the operators actually needed to see.",
+        "image": null
+      },
+      {
+        "label": "Solution",
+        "heading": "A high-density dashboard built for the factory floor.",
+        "body": "The resulting dashboard featured customizable alert hierarchies, camera feed integration, and at-a-glance anomaly summaries tested with operators in real production environments. The brand and marketing site I built alongside it positioned Zira as a credible enterprise product in a crowded industrial AI market.",
+        "image": null
+      }
+    ],
+    "model3d": "/3d-models/zira-camera.glb"
+  },
+  {
+    "slug": "nib",
+    "number": "04",
+    "title": "nib",
+    "subtitle": "Task Tracking Mobile App",
+    "role": "Product Designer",
+    "year": "2026",
+    "description": "A Bullet Journal inspired task tracking mobile application that lets users write, erase, and cross off tasks day by day.",
+    "tags": [
+      "Product Design",
+      "Mobile App"
+    ],
+    "externalHref": "https://play.google.com/store/apps/details?id=com.dinco.nib&hl=en_US",
+    "coverBg": "#ffff00",
+    "images": [
+      "/images/nib/1.png"
+    ],
+    "figmaEmbed": null,
+    "features": [
+      {
+        "category": "Tech Stack",
+        "items": [
+          "Kotlin",
+          "HTML",
+          "Gradle"
+        ]
+      },
+      {
+        "category": "App Features",
+        "items": [
+          "Home widget",
+          "Scalable from mobile and tablet",
+          "Write, erase, and cross off tasks",
+          "Automated weekly tasks",
+          "Aspirations list to keep users motivated"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "label": "Problem",
+        "heading": "Smart phones are less productive",
+        "body": "Our personal smart phones are becoming less and less productive as home pages become cluttered with apps.",
+        "image": "/images/nib/images.jpeg"
+      },
+      {
+        "label": "Question",
+        "heading": "What does a home page really need?",
+        "body": "How can we transform home pages to keep phone user's focused rather than reaching for apps to doom scroll?",
+        "image": "/images/nib/jbareham_171013_2050_0271.webp"
+      },
+      {
+        "label": "Proposition",
+        "heading": "A simple widget with simple feedback",
+        "body": "Replacing home screen apps with an intuitive task racker that motivates users based on their aspirations and habits.",
+        "image": "/images/nib/Screenshot_20260224_080226.png"
+      },
+      {
+        "label": "Solution",
+        "heading": "All you need is a nib",
+        "body": "Nib lets users write, erase, and cross off tasks day by day.",
+        "image": "/images/nib/nib feature graphic.png"
+      }
+    ],
+    "model3d": "/3d-models/pencil.glb"
+  },
+  {
+    "slug": "plan-with-coco",
+    "number": "05",
     "title": "Plan With CoCo",
     "subtitle": "AI Wedding Planning Assistant",
     "role": "CTO & Lead Designer",
@@ -145,143 +349,5 @@
       }
     ],
     "model3d": "/3d-models/heart.glb"
-  },
-  {
-    "slug": "zira",
-    "number": "03",
-    "title": "Zira",
-    "subtitle": "Production Dashboard",
-    "role": "Design Lead & ML Contributor",
-    "year": "2025",
-    "description": "Led marketing and branding initiatives while contributing to computer vision AI modeling for a production analytics dashboard.",
-    "tags": [
-      "Branding",
-      "Dashboard Design",
-      "Computer Vision",
-      "Marketing"
-    ],
-    "externalHref": null,
-    "coverBg": "#ffff00",
-    "images": [
-      "/images/zira/zira_logo_padded_black.png"
-    ],
-    "figmaEmbed": null,
-    "features": [],
-    "sections": [
-      {
-        "label": "Problem",
-        "heading": "Manufacturing operators were drowning in data with no way to prioritize.",
-        "body": "Zira's computer vision system generated thousands of anomaly signals per shift. Without a well-designed interface, operators couldn't distinguish critical failures from noise — which meant the technology's value was invisible to the people it was supposed to help.",
-        "image": null
-      },
-      {
-        "label": "Question",
-        "heading": "How do you design for a world where every second of downtime costs money?",
-        "body": "The question wasn't 'how do we display sensor data?' — it was 'what does an operator need to see in the first three seconds of looking at a screen?' Designing for high-stakes, high-velocity decisions required a fundamentally different approach than typical dashboard design.",
-        "image": null
-      },
-      {
-        "label": "Research",
-        "heading": "I spent time on the factory floor before opening Figma.",
-        "body": "I embedded with line operators to understand their actual workflow: how they scanned for issues, what caused them to act, and where current tooling fell short. That context shaped every information hierarchy decision in the dashboard — and it couldn't have been learned from a brief.",
-        "image": null
-      },
-      {
-        "label": "Proposition",
-        "heading": "Design the interface where the data is born.",
-        "body": "I contributed directly to the ML labeling pipeline and model evaluation workflow — which meant I understood the data at its source. That dual perspective let me design not just for what operators needed to see, but for what the system was actually capable of surfacing accurately.",
-        "image": null
-      },
-      {
-        "label": "Solution",
-        "heading": "A high-density dashboard built for the factory floor.",
-        "body": "The resulting dashboard featured customizable alert hierarchies, camera feed integration, and at-a-glance anomaly summaries tested with operators in real production environments. The brand and marketing site I built alongside it positioned Zira as a credible enterprise product in a crowded industrial AI market.",
-        "image": null
-      }
-    ],
-    "model3d": "/3d-models/zira-camera.glb"
-  },
-  {
-    "slug": "apex-semi",
-    "number": "04",
-    "title": "Apex Semi (now Cadence)",
-    "subtitle": "Dashboard for Batch Computing Software",
-    "role": "Full Stack Software Engineer",
-    "year": "2022–2024",
-    "description": "Created a customer-facing Django dashboard with LDAP security integration for a semiconductor company. Apex Semi was acquired by Cadence Design Systems in 2024.",
-    "tags": [
-      "Full Stack",
-      "Software Engineering",
-      "Web development",
-      "Enterprise"
-    ],
-    "externalHref": "https://www.linkedin.com/company/apex-semi/about/",
-    "coverBg": "#00ffff",
-    "images": [
-      "/images/apex-semi/ChatGPT Image Mar 9, 2026, 01_34_43 PM.png",
-      "/images/apex-semi/Screenshot 2026-01-28 at 9.46.50â¯PM.png"
-    ],
-    "figmaEmbed": null,
-    "features": [
-      {
-        "category": "Tech Stack",
-        "items": [
-          "Django",
-          "LDAP",
-          "SQL",
-          "datatables"
-        ]
-      },
-      {
-        "category": "App Features",
-        "items": [
-          "LDAP authentication and verification",
-          "Django full stack web application",
-          "Datatables UI integration",
-          "jQuerie for complex SQL searches"
-        ]
-      },
-      {
-        "category": "Responsibilities",
-        "items": [
-          "Lead user interviews to drive new features",
-          "Design UI/UX flows",
-          "Develop front and back end features"
-        ]
-      }
-    ],
-    "sections": [
-      {
-        "label": "Problem",
-        "heading": "Enterprise licensing dashboards were built for IT teams, not chip engineers.",
-        "body": "Apex Semi's customers — engineers at major semiconductor companies — needed access to complex licensing and analytics data. The existing tooling was either too generic or too opaque. Trust is hard to build when the interface doesn't speak your users' language.",
-        "image": null
-      },
-      {
-        "label": "Question",
-        "heading": "How do you design for engineers who understand the system better than you do?",
-        "body": "Chip engineers are precise, skeptical of unnecessary UI chrome, and accustomed to dense data. The question wasn't 'how do we make this approachable?' — it was 'how do we make this credible and efficient for people who will notice every wrong decision?'",
-        "image": null
-      },
-      {
-        "label": "Research",
-        "heading": "The data model and the design co-evolved.",
-        "body": "I worked closely with the backend team from day one — not after the API was built. By understanding the licensing data model as it was being designed, I could make UI decisions that made sense for how the data actually behaved, not how I wished it would.",
-        "image": null
-      },
-      {
-        "label": "Proposition",
-        "heading": "Match the density of the data with the precision of the interface.",
-        "body": "The design language was deliberate and restrained: no unnecessary visual decoration, clear information hierarchy, and role-based views that surface only what each user type needs. Security wasn't bolted on — it was woven into every interaction through the LDAP integration.",
-        "image": "/images/apex-semi/Screenshot 2026-01-28 at 9.46.50â¯PM.png"
-      },
-      {
-        "label": "Solution",
-        "heading": "Secure, precise, and proven — acquired by Cadence.",
-        "body": "The dashboard shipped with enterprise-grade LDAP authentication, giving clients role-based access to their licensing and analytics data. Apex Semi was acquired by Cadence Design Systems in 2024, validating the product's technical foundation and the quality of the work that went into it.",
-        "image": null
-      }
-    ],
-    "model3d": "/3d-models/computer.glb"
   }
 ]
