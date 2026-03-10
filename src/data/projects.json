@@ -144,17 +144,17 @@
     "slug": "zira",
     "number": "03",
     "title": "Zira",
-    "subtitle": "Production Dashboard",
-    "role": "Design Lead & ML Contributor",
-    "year": "2025",
+    "subtitle": "Production Dashboard for Industrial Manufacturers",
+    "role": "Product Marketing Manager & ML Contributor",
+    "year": "2025 - 2026",
     "description": "Led marketing and branding initiatives while contributing to computer vision AI modeling for a production analytics dashboard.",
     "tags": [
-      "Branding",
-      "Dashboard Design",
+      "Dashboard",
       "Computer Vision",
-      "Marketing"
+      "Marketing",
+      "Branding"
     ],
-    "externalHref": null,
+    "externalHref": "www.zira.us",
     "coverBg": "#000000",
     "images": [
       "/images/zira/white.png"
@@ -182,15 +182,15 @@
       },
       {
         "label": "Proposition",
-        "heading": "Design the for users not for yourself",
-        "body": "This perspective let me design not just for what metrics looks good on a monitor, but for what the operators actually needed to see.",
-        "image": null
+        "heading": "Design for users not for yourself",
+        "body": "This perspective let me design not just what metrics looks good on a monitor, but for what the operators actually needed to see.",
+        "image": "/images/zira/Capture_Dash_1_better.jpg"
       },
       {
         "label": "Solution",
-        "heading": "A high-density dashboard built for the factory floor.",
-        "body": "The resulting dashboard featured customizable alert hierarchies, camera feed integration, and at-a-glance anomaly summaries tested with operators in real production environments. The brand and marketing site I built alongside it positioned Zira as a credible enterprise product in a crowded industrial AI market.",
-        "image": null
+        "heading": "A dashboard built for the factory floor.",
+        "body": "The resulting dashboard featured customizable alert hierarchies, camera feed integration, and metric summaries tested with operators in real production environments. The brand and marketing site built alongside it positioned Zira as a credible enterprise product in a growing industrial market.",
+        "image": "/images/zira/marketing-image-computer-and-vision-web.png"
       }
     ],
     "model3d": "/3d-models/zira-camera.glb"
