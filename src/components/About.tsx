@@ -26,7 +26,7 @@ export default function About() {
             </p>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>Industrial Design, San Francisco State University</li>
-              <li>OHIO Design Studio</li>
+              <li>OHIO Design Studio - industrial Designer</li>
               <li>fyrn — manufacturing &amp; production</li>
             </ul>
           </div>
