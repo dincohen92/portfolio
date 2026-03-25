@@ -25,8 +25,8 @@ export default function About() {
               Beginnings — San Francisco
             </p>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Industrial Design, San Francisco State University</li>
-              <li>OHIO Design Studio - industrial Designer</li>
+              <li>San Francisco State University - industrial design</li>
+              <li>OHIO Design Studio - industrial designer</li>
               <li>fyrn — manufacturing &amp; production</li>
             </ul>
           </div>
