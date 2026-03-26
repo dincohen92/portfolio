@@ -47,8 +47,7 @@ export default function About() {
               Now
             </p>
             <p className="text-sm text-muted-foreground">
-              Product Design
-              Bridging the gap between beautiful interfaces and complex engineering.
+              Product Design bridging the gap between beautiful interfaces and complex engineering.
             </p>
           </div>
         </div>

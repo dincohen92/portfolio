@@ -34,6 +34,15 @@ export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col justify-end pb-20 section-padding bg-black relative overflow-hidden">
 
+      {/* ── Mobile profile image ───────────────────────────────────────────── */}
+      <div className="md:hidden absolute top-0 right-0 h-[55vw] w-[55vw] overflow-hidden pointer-events-none opacity-30">
+        <img
+          src="/images/hero/din-headshot.png"
+          alt=""
+          className="w-full h-full object-cover object-top"
+        />
+      </div>
+
       {/* ── Bauhaus geometric mask ─────────────────────────────────────────── */}
       <div className="hidden md:block absolute inset-0 pointer-events-none">
         <svg
@@ -52,7 +61,7 @@ export default function Hero() {
           <rect x="8" y="360" width="172" height="220" fill="none" stroke="white" strokeWidth="1" opacity="0.13" />
           <circle cx="400" cy="108" r="66" fill="none" stroke="white" strokeWidth="1" opacity="0.13" />
           <image
-            href="/images/hero/din%20headshot.png"
+            href="/images/hero/din-headshot.png"
             x="-30"
             y={offset}
             width="500"
