@@ -198,6 +198,32 @@ export default async function ProjectPage({ params }: Props) {
 
 
 
+        {/* Contact CTA */}
+        <div className="border-t border-border section-padding py-20">
+          <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
+            <div>
+              <p className="text-xs text-muted-foreground uppercase tracking-widest mb-3">What&apos;s next</p>
+              <h2 className="text-2xl md:text-3xl font-medium tracking-tight">Interested in working together?</h2>
+            </div>
+            <div className="flex items-center gap-4 shrink-0">
+              <a
+                href="mailto:dincohen92@gmail.com"
+                className="inline-flex items-center gap-2 border border-foreground px-5 py-2.5 text-sm hover:bg-foreground hover:text-background transition-colors"
+              >
+                Get in touch ↗
+              </a>
+              <a
+                href="https://linkedin.com/in/dincohen"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+
         {/* Footer nav */}
         <div className="border-t border-border section-padding py-8 flex items-center justify-between text-sm text-muted-foreground">
           <Link href="/#projects" className="hover:text-foreground transition-colors">

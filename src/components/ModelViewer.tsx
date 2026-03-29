@@ -82,6 +82,10 @@ export default function ModelViewer({ src, bg }: { src: string; bg: string }) {
       style={{ backgroundColor: bg }}
     >
       <LoaderOverlay bg={bg} />
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-10 pointer-events-none flex items-center gap-1.5 text-xs text-white/50 tracking-widest uppercase">
+        <span>↔</span>
+        <span>Move to rotate</span>
+      </div>
       <Canvas
         camera={{ fov: 40 }}
         gl={{ alpha: true, antialias: true }}

@@ -16,6 +16,24 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Admin Site
+
+There is a local-only admin panel for editing project data at `admin/`.
+
+**Important:** Start the main dev server first so it claims port 3000. Then start the admin server in a separate terminal — it will bind to port 3001.
+
+```bash
+# Terminal 1 — main site
+npm run dev
+
+# Terminal 2 — admin site
+cd admin && npm start
+```
+
+Open [http://localhost:3001](http://localhost:3001) for the admin panel.
+
+If the main dev server is not running when you start the admin, Next.js may later start on port 3001 and conflict with the admin server.
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.

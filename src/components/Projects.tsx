@@ -52,7 +52,7 @@ function CardContent({ project }: { project: Project }) {
       {/* Image: fades in on hover */}
       {project.images[0] && (
         <div
-          className="absolute inset-0 bg-center bg-cover opacity-0 group-hover:opacity-40 transition-opacity duration-700 ease-out"
+          className="absolute inset-0 bg-center bg-cover opacity-20 md:opacity-0 md:group-hover:opacity-40 transition-opacity duration-700 ease-out"
           style={{ backgroundImage: `url("${project.images[0]}")` }}
         />
       )}
