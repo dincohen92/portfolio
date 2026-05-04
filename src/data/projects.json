@@ -243,7 +243,7 @@
     "images": [
       "/images/nib/1.png"
     ],
-    "figmaEmbed": null,
+    "figmaEmbed": "https://embed.figma.com/proto/KycVTOB4PZsBva4LWb04dZ/nib-app?node-id=34-124&p=f&viewport=30%2C302%2C0.54&scaling=scale-down&content-scaling=fixed&starting-point-node-id=37%3A32&page-id=0%3A1&embed-host=share",
     "features": [
       {
         "category": "Tech Stack",
