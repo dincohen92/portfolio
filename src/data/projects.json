@@ -1,7 +1,32 @@
 [
   {
-    "slug": "zira",
+    "slug": "STATE",
     "number": "01",
+    "title": "New Project",
+    "subtitle": "State Design Collective",
+    "role": "Product Designer & Founder",
+    "year": "2026",
+    "description": "A platform for designers to post work at any stage, get and give constructive feedback, and build your reputation within the community.",
+    "tags": [
+      "Product Design",
+      "Project Management",
+      "Prototyping",
+      "Claude code",
+      "Next.js",
+      "Supabase",
+      "Vercel"
+    ],
+    "externalHref": "https://www.statedesigncollective.com/",
+    "coverBg": "#ffff00",
+    "images": [],
+    "figmaEmbed": null,
+    "features": [],
+    "sections": [],
+    "model3d": null
+  },
+  {
+    "slug": "zira",
+    "number": "02",
     "title": "Zira",
     "subtitle": "Production Dashboard for Industrial Manufacturers",
     "role": "Product Designer & ML Contributor",
@@ -56,7 +81,7 @@
   },
   {
     "slug": "plan-with-coco",
-    "number": "02",
+    "number": "03",
     "title": "Plan With CoCo",
     "subtitle": "AI Wedding Planning Assistant",
     "role": "CTO & Lead Designer",
@@ -145,7 +170,7 @@
   },
   {
     "slug": "apex-semi",
-    "number": "03",
+    "number": "04",
     "title": "Apex Semi (now Cadence)",
     "subtitle": "Dashboard for Batch Computing Software",
     "role": "Full Stack Software Engineer",
@@ -228,7 +253,7 @@
   },
   {
     "slug": "nib",
-    "number": "04",
+    "number": "05",
     "title": "nib",
     "subtitle": "Task Tracking Mobile App",
     "role": "Product Designer",
@@ -294,7 +319,7 @@
   },
   {
     "slug": "slate-auto",
-    "number": "05",
+    "number": "06",
     "title": "Slate Auto",
     "subtitle": "EV Auto App Design",
     "role": "Product Designer",
