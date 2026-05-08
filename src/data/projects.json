@@ -2,7 +2,7 @@
   {
     "slug": "STATE",
     "number": "01",
-    "title": "New Project",
+    "title": "STATE",
     "subtitle": "State Design Collective",
     "role": "Product Designer & Founder",
     "year": "2026",
@@ -18,7 +18,12 @@
     ],
     "externalHref": "https://www.statedesigncollective.com/",
     "coverBg": "#ffff00",
-    "images": [],
+    "images": [
+      "/images/STATE/black.png",
+      "/images/STATE/ChatGPT Image May 7, 2026, 02_15_21 PM.png",
+      "/images/STATE/Screenshot 2026-05-07 at 8.26.16â¯PM.png",
+      "/images/STATE/Screenshot 2026-05-07 at 8.27.35â¯PM.png"
+    ],
     "figmaEmbed": null,
     "features": [],
     "sections": [],
