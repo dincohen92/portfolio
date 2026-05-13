@@ -95,10 +95,10 @@ export default function Hero() {
 
         <p className="text-[clamp(2rem,3.8vw,4rem)] font-medium leading-[1.2] tracking-tight text-white">
           <Phrase id="din-cohen" onHover={setActiveNote}>Din Cohen</Phrase>
-          {" "}is a product designer{" "}
-          <Phrase id="experienced" onHover={setActiveNote}>experienced</Phrase>
-          {" "}in simplifying complex problems with simple solutions for{" "}
-          <Phrase id="humans" onHover={setActiveNote}>humans</Phrase>
+          {" "}is a {" "}
+          <Phrase id="experienced" onHover={setActiveNote}>product designer</Phrase>
+          {" "}experienced in simplifying complex problems with simple solutions {" "}
+          <Phrase id="humans" onHover={setActiveNote}>for humans</Phrase>
           .
         </p>
       </div>

@@ -1,11 +1,11 @@
 [
   {
-    "slug": "STATE",
+    "slug": "state",
     "number": "01",
     "title": "STATE",
     "subtitle": "State Design Collective",
     "role": "Product Designer & Founder",
-    "year": "2026",
+    "year": "2024",
     "description": "A platform for designers to post work at any stage, get and give constructive feedback, and build your reputation within the community.",
     "tags": [
       "Product Design",
@@ -17,17 +17,30 @@
       "Vercel"
     ],
     "externalHref": "https://www.statedesigncollective.com/",
-    "coverBg": "#ffff00",
+    "coverBg": "#00ffff",
     "images": [
       "/images/STATE/black.png",
-      "/images/STATE/ChatGPT Image May 7, 2026, 02_15_21 PM.png",
+      "/images/state/ChatGPT Image May 7, 2026, 02_15_21 PM.png",
       "/images/STATE/Screenshot 2026-05-07 at 8.26.16â¯PM.png",
       "/images/STATE/Screenshot 2026-05-07 at 8.27.35â¯PM.png"
     ],
     "figmaEmbed": null,
     "features": [],
-    "sections": [],
-    "model3d": null
+    "sections": [
+      {
+        "label": "Problem",
+        "heading": "Real Designs Need Real Feedback",
+        "body": "Designers can't work in a vacuum. They need honest critique on their work",
+        "image": "/images/state/Screenshot 2026-05-07 at 8.26.16â¯PM.png"
+      },
+      {
+        "label": "Solution",
+        "heading": "STATE Creates that Space",
+        "body": "STATE is an online platform for designers to share work, provide and collect feedback, and grow their network",
+        "image": "/images/state/Screenshot 2026-05-07 at 8.27.35â¯PM.png"
+      }
+    ],
+    "model3d": "/3d-models/light-bulb.glb"
   },
   {
     "slug": "zira",
