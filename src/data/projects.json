@@ -17,12 +17,11 @@
       "Vercel"
     ],
     "externalHref": "https://www.statedesigncollective.com/",
-    "coverBg": "#00ffff",
+    "coverBg": "#ffff00",
     "images": [
-      "/images/STATE/black.png",
-      "/images/state/ChatGPT Image May 7, 2026, 02_15_21 PM.png",
-      "/images/STATE/Screenshot 2026-05-07 at 8.26.16â¯PM.png",
-      "/images/STATE/Screenshot 2026-05-07 at 8.27.35â¯PM.png"
+      "/images/STATE/state-logo.svg",
+      "/images/STATE/state-landing.png",
+      "/images/STATE/state-project.png"
     ],
     "figmaEmbed": null,
     "features": [],
@@ -31,13 +30,13 @@
         "label": "Problem",
         "heading": "Real Designs Need Real Feedback",
         "body": "Designers can't work in a vacuum. They need honest critique on their work",
-        "image": "/images/state/Screenshot 2026-05-07 at 8.26.16â¯PM.png"
+        "image": "/images/STATE/state-landing.png"
       },
       {
         "label": "Solution",
         "heading": "STATE Creates that Space",
         "body": "STATE is an online platform for designers to share work, provide and collect feedback, and grow their network",
-        "image": "/images/state/Screenshot 2026-05-07 at 8.27.35â¯PM.png"
+        "image": "/images/STATE/state-project.png"
       }
     ],
     "model3d": "/3d-models/light-bulb.glb"
@@ -56,7 +55,7 @@
       "Marketing",
       "Branding"
     ],
-    "externalHref": "www.zira.us",
+    "externalHref": "https://www.zira.us",
     "coverBg": "#000000",
     "images": [
       "/images/zira/white.png"
@@ -270,8 +269,66 @@
     "model3d": "/3d-models/computer.glb"
   },
   {
-    "slug": "nib",
+    "slug": "slate-auto",
     "number": "05",
+    "title": "Slate Auto",
+    "subtitle": "EV Auto App Design",
+    "role": "Product Designer",
+    "year": "2026",
+    "description": "3 day design sprint to create a concept for an electric vehicle app focused on user experience and branding.",
+    "tags": [
+      "Figma",
+      "UX Design",
+      "UI Design",
+      "Product Design"
+    ],
+    "externalHref": "https://www.figma.com/deck/wwcOdZRNnSyc76F0QsUOG1",
+    "coverBg": "#000000",
+    "model3d": "/3d-models/slate-truck.glb",
+    "images": [
+      "/images/slate-auto/1.webp",
+      "/images/slate-auto/2.avif",
+      "/images/slate-auto/slate-prototype.png",
+      "/images/slate-auto/3.avif"
+    ],
+    "figmaEmbed": "https://embed.figma.com/proto/dm7dXUQfkTDdGt0nmsZoNu/Final-Mockup?page-id=0%3A1&node-id=26-78&p=f&viewport=-6%2C547%2C0.26&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3&embed-host=share",
+    "features": [],
+    "sections": [
+      {
+        "label": "Problem",
+        "heading": "New modes of transportation require new interfaces.",
+        "body": "Electric vehicle drivers not only expect, but rely on a high level of technology in their automotive products. Although Slate position's itself as the affordable truck, it still needs to meet these high standards.",
+        "image": "/images/slate-auto/3.avif"
+      },
+      {
+        "label": "Question",
+        "heading": "What would an EV app look like if it was designed with the same attention to personality and affordability as the truck?",
+        "body": "How might Slate design a mobile-first experience that reinforces confidence at every interaction while maintaining the minimalist Slate aesthetic?",
+        "image": "/images/slate-auto/2.avif"
+      },
+      {
+        "label": "Research",
+        "heading": "Three days to research, audit, design, and finalize",
+        "body": "After defining the project guidelines and sprint deadlines, deep research on Slate's competitors revealed EV owner's pain points with flagship electric vehicles.",
+        "image": "/images/slate-auto/slate-user-research.png"
+      },
+      {
+        "label": "Proposition",
+        "heading": "Every interaction should reduce friction, and build trust",
+        "body": "The app needed to lead with the most relevant information and shift as the user journey progressed. I proposed a single-surface dashboard that adapts to the driver's context depending on the proximity t the truck.",
+        "image": "/images/slate-auto/slate-design.png"
+      },
+      {
+        "label": "Solution",
+        "heading": "Bold, minimal, and unmistakably Slate.",
+        "body": "The visual design mirrors the truck's industrial identity: monochrome palette, heavy typography, and confident negative space. I built a high-fidelity Figma prototype that demonstrates the core flows.",
+        "image": "/images/slate-auto/slate-prototype.png"
+      }
+    ]
+  },
+  {
+    "slug": "nib",
+    "number": "06",
     "title": "nib",
     "subtitle": "Task Tracking Mobile App",
     "role": "Product Designer",
@@ -334,63 +391,5 @@
       }
     ],
     "model3d": "/3d-models/pencil.glb"
-  },
-  {
-    "slug": "slate-auto",
-    "number": "06",
-    "title": "Slate Auto",
-    "subtitle": "EV Auto App Design",
-    "role": "Product Designer",
-    "year": "2026",
-    "description": "3 day design sprint to create a concept for an electric vehicle app focused on user experience and branding.",
-    "tags": [
-      "Figma",
-      "UX Design",
-      "UI Design",
-      "Product Design"
-    ],
-    "externalHref": "https://www.figma.com/deck/wwcOdZRNnSyc76F0QsUOG1",
-    "coverBg": "#000000",
-    "model3d": "/3d-models/slate-truck.glb",
-    "images": [
-      "/images/slate-auto/1.webp",
-      "/images/slate-auto/2.avif",
-      "/images/slate-auto/slate-prototype.png",
-      "/images/slate-auto/3.avif"
-    ],
-    "figmaEmbed": "https://embed.figma.com/proto/dm7dXUQfkTDdGt0nmsZoNu/Final-Mockup?page-id=0%3A1&node-id=26-78&p=f&viewport=-6%2C547%2C0.26&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A3&embed-host=share",
-    "features": [],
-    "sections": [
-      {
-        "label": "Problem",
-        "heading": "New modes of transportation require new interfaces.",
-        "body": "Electric vehicle drivers not only expect, but rely on a high level of technology in their automotive products. Although Slate position's itself as the affordable truck, it still needs to meet these high standards.",
-        "image": "/images/slate-auto/3.avif"
-      },
-      {
-        "label": "Question",
-        "heading": "What would an EV app look like if it was designed with the same attention to personality and affordability as the truck?",
-        "body": "How might Slate design a mobile-first experience that reinforces confidence at every interaction while maintaining the minimalist Slate aesthetic?",
-        "image": "/images/slate-auto/2.avif"
-      },
-      {
-        "label": "Research",
-        "heading": "Three days to research, audit, design, and finalize",
-        "body": "After defining the project guidelines and sprint deadlines, deep research on Slate's competitors revealed EV owner's pain points with flagship electric vehicles.",
-        "image": "/images/slate-auto/slate-user-research.png"
-      },
-      {
-        "label": "Proposition",
-        "heading": "Every interaction should reduce friction, and build trust",
-        "body": "The app needed to lead with the most relevant information and shift as the user journey progressed. I proposed a single-surface dashboard that adapts to the driver's context depending on the proximity t the truck.",
-        "image": "/images/slate-auto/slate-design.png"
-      },
-      {
-        "label": "Solution",
-        "heading": "Bold, minimal, and unmistakably Slate.",
-        "body": "The visual design mirrors the truck's industrial identity: monochrome palette, heavy typography, and confident negative space. I built a high-fidelity Figma prototype that demonstrates the core flows.",
-        "image": "/images/slate-auto/slate-prototype.png"
-      }
-    ]
   }
 ]
