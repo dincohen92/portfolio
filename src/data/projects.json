@@ -20,9 +20,9 @@
     "coverBg": "#ffff00",
     "images": [
       "/images/STATE/state-logo.svg",
-      "/images/state/Screenshot 2026-06-11 at 10.19.53â¯AM.png",
+      "/images/state/state-hero.png",
       "/images/STATE/state-project.png",
-      "/images/state/Screenshot 2026-06-11 at 10.23.15â¯AM.png",
+      "/images/state/state-score.png",
       "/images/state/igor-omilaev-zRr0uBFYEtA-unsplash.jpg"
     ],
     "figmaEmbed": null,
@@ -32,7 +32,7 @@
         "label": "Problem",
         "heading": "Real Designs Need Real Feedback",
         "body": "Designers can't work in a vacuum. They need honest critique on their work.",
-        "image": "/images/state/Screenshot 2026-06-11 at 10.19.53â¯AM.png"
+        "image": "/images/state/state-hero.png"
       },
       {
         "label": "Research",
@@ -44,13 +44,13 @@
         "label": "Proposition",
         "heading": "A Platform Built for Designers",
         "body": "With the ever-evolving digital world and it's rapidly changing standards, STATE needs to include all design disciplines and all methods for sharing content. Users can upload any file type from Figma prototypes to video files, to 3D models.",
-        "image": "/images/state/Screenshot 2026-06-11 at 10.23.15â¯AM.png"
+        "image": "/images/state/state-project.png"
       },
       {
         "label": "Solution",
         "heading": "A Gated System that Rewards Constructive Feedabck",
         "body": "Rather than posting projects for likes, users get scored for project posting and critiquing. posting a project requires enough crit score which creates a nurturing community around sharing work as well as feedback.",
-        "image": "/images/state/Screenshot 2026-06-11 at 10.25.56â¯AM.png"
+        "image": "/images/state/state-score.png"
       }
     ],
     "model3d": "/3d-models/light-bulb.glb"
