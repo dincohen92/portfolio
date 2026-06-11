@@ -19,9 +19,9 @@
     "externalHref": "https://www.statedesigncollective.com/",
     "coverBg": "#ffff00",
     "images": [
-      "/images/STATE/state-logo.svg",
+      "/images/state/state-logo.svg",
       "/images/state/state-hero.png",
-      "/images/STATE/state-project.png",
+      "/images/state/state-projects.png",
       "/images/state/state-score.png",
       "/images/state/igor-omilaev-zRr0uBFYEtA-unsplash.jpg"
     ],
@@ -44,7 +44,7 @@
         "label": "Proposition",
         "heading": "A Platform Built for Designers",
         "body": "With the ever-evolving digital world and it's rapidly changing standards, STATE needs to include all design disciplines and all methods for sharing content. Users can upload any file type from Figma prototypes to video files, to 3D models.",
-        "image": "/images/state/state-project.png"
+        "image": "/images/state/state-projects.png"
       },
       {
         "label": "Solution",
