@@ -20,8 +20,10 @@
     "coverBg": "#ffff00",
     "images": [
       "/images/STATE/state-logo.svg",
-      "/images/STATE/state-landing.png",
-      "/images/STATE/state-project.png"
+      "/images/state/Screenshot 2026-06-11 at 10.19.53â¯AM.png",
+      "/images/STATE/state-project.png",
+      "/images/state/Screenshot 2026-06-11 at 10.23.15â¯AM.png",
+      "/images/state/igor-omilaev-zRr0uBFYEtA-unsplash.jpg"
     ],
     "figmaEmbed": null,
     "features": [],
@@ -29,14 +31,26 @@
       {
         "label": "Problem",
         "heading": "Real Designs Need Real Feedback",
-        "body": "Designers can't work in a vacuum. They need honest critique on their work",
-        "image": "/images/STATE/state-landing.png"
+        "body": "Designers can't work in a vacuum. They need honest critique on their work.",
+        "image": "/images/state/Screenshot 2026-06-11 at 10.19.53â¯AM.png"
+      },
+      {
+        "label": "Research",
+        "heading": "Likes don't Translate to Good Design",
+        "body": "There is no dedicated app for deign critiques. Behance, Reddit, and Instagram promote algorithms for likes not feedback. The design community deserves a better way to critique work.",
+        "image": "/images/state/igor-omilaev-zRr0uBFYEtA-unsplash.jpg"
+      },
+      {
+        "label": "Proposition",
+        "heading": "A Platform Built for Designers",
+        "body": "With the ever-evolving digital world and it's rapidly changing standards, STATE needs to include all design disciplines and all methods for sharing content. Users can upload any file type from Figma prototypes to video files, to 3D models.",
+        "image": "/images/state/Screenshot 2026-06-11 at 10.23.15â¯AM.png"
       },
       {
         "label": "Solution",
-        "heading": "STATE Creates that Space",
-        "body": "STATE is an online platform for designers to share work, provide and collect feedback, and grow their network",
-        "image": "/images/STATE/state-project.png"
+        "heading": "A Gated System that Rewards Constructive Feedabck",
+        "body": "Rather than posting projects for likes, users get scored for project posting and critiquing. posting a project requires enough crit score which creates a nurturing community around sharing work as well as feedback.",
+        "image": "/images/state/Screenshot 2026-06-11 at 10.25.56â¯AM.png"
       }
     ],
     "model3d": "/3d-models/light-bulb.glb"
