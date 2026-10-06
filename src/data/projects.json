@@ -21,11 +21,11 @@
     "images": [
       "/images/state/state-logo.svg",
       "/images/state/state-hero.png",
-      "/images/state/state-projects.png",
-      "/images/state/state-score.png",
-      "/images/state/igor-omilaev-zRr0uBFYEtA-unsplash.jpg"
+      "/images/state/igor-omilaev-zRr0uBFYEtA-unsplash.jpg",
+      "/images/state/Screenshot 2026-10-06 at 9.22.15â¯AM.png",
+      "/images/state/Screenshot 2026-10-06 at 9.23.48â¯AM.png"
     ],
-    "figmaEmbed": null,
+    "figmaEmbed": "https://embed.figma.com/proto/Hht9WQoOq1KV10XCZLD2mo/UI?node-id=83-15&viewport=6%2C340%2C0.17&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=83%3A15&page-id=83%3A9&embed-host=share",
     "features": [],
     "sections": [
       {
@@ -44,13 +44,13 @@
         "label": "Proposition",
         "heading": "A Platform Built for Designers",
         "body": "With the ever-evolving digital world and it's rapidly changing standards, STATE needs to include all design disciplines and all methods for sharing content. Users can upload any file type from Figma prototypes to video files, to 3D models.",
-        "image": "/images/state/state-projects.png"
+        "image": "/images/state/Screenshot 2026-10-06 at 9.23.48â¯AM.png"
       },
       {
         "label": "Solution",
         "heading": "A Gated System that Rewards Constructive Feedabck",
         "body": "Rather than posting projects for likes, users get scored for project posting and critiquing. posting a project requires enough crit score which creates a nurturing community around sharing work as well as feedback.",
-        "image": "/images/state/state-score.png"
+        "image": "/images/state/Screenshot 2026-10-06 at 9.22.15â¯AM.png"
       }
     ],
     "model3d": "/3d-models/light-bulb.glb"
@@ -129,11 +129,13 @@
     "externalHref": "https://planwithcoco.com",
     "coverBg": "#ff00ff",
     "images": [
-      "/images/plan-with-coco/1.png",
-      "/images/plan-with-coco/2.png",
-      "/images/plan-with-coco/3.png"
+      "/images/plan-with-coco/coco pink logo.png",
+      "/images/plan-with-coco/coco hero image.png",
+      "/images/plan-with-coco/coco brand guide.png",
+      "/images/plan-with-coco/Screenshot 2026-10-06 at 9.51.11â¯AM.png",
+      "/images/plan-with-coco/coco icons.png"
     ],
-    "figmaEmbed": "https://embed.figma.com/proto/YtsEVlJfErLh4cceiKnMAA/Coco-%E2%80%93-Wedding-Planner?node-id=17-2&p=f&viewport=86%2C337%2C0.13&scaling=min-zoom&content-scaling=fixed&page-id=4%3A2&embed-host=share",
+    "figmaEmbed": "https://embed.figma.com/proto/Mf3YKg3yZn5alBZGhkVIcD/CoCo-UI?node-id=30-542&p=f&viewport=3%2C188%2C0.09&scaling=min-zoom&content-scaling=fixed&page-id=1%3A3&embed-host=share",
     "features": [
       {
         "category": "Tech Stack",
@@ -176,25 +178,25 @@
         "label": "Question",
         "heading": "What if planning your wedding felt like talking to someone who'd done it before?",
         "body": "The core question wasn't 'how do we organize wedding tasks?' it was 'how do we make couples feel confident and connected from day one?' That reframe shifted the product from a productivity tool to a guided experience.",
-        "image": "/images/plan-with-coco/3.png"
+        "image": "/images/plan-with-coco/coco hero image.png"
       },
       {
         "label": "Research",
         "heading": "We mapped the full planning journey before writing a line of code.",
         "body": "I conducted user interviews with recently married couples to map where stress peaked, where decisions clustered, and what information people wished they'd had earlier.",
-        "image": "/images/plan-with-coco/coco-research.png"
+        "image": "/images/plan-with-coco/coco brand guide.png"
       },
       {
         "label": "Proposition",
         "heading": "AI deals with complexity but we handle the emotions.",
         "body": "Large language models generate personalized timelines, vendor shortlists, and budget breakdowns based on each couple's inputs. But the interface needed to feel human, conversational, unhurried, and emotionally aware of what this moment means in someone's life. That meant listening to peoples stories and designing an app that helps couples through the process instead of overloading them with AI slop.",
-        "image": "/images/plan-with-coco/2.png"
+        "image": "/images/plan-with-coco/coco icons.png"
       },
       {
         "label": "Solution",
         "heading": "A big decision requires a lot of research",
         "body": "The outcome is a resource that helps couples research vendors and ideas, compile them into a handoff sheet for wedding coordinators, and prepare for their wedding days. ",
-        "image": "/images/plan-with-coco/1.png"
+        "image": "/images/plan-with-coco/Screenshot 2026-10-06 at 9.51.11â¯AM.png"
       }
     ],
     "model3d": "/3d-models/heart.glb"
