@@ -25,9 +25,9 @@ export default function About() {
               Beginnings — San Francisco
             </p>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>San Francisco State University - industrial design</li>
-              <li>OHIO Design Studio - industrial designer</li>
-              <li>fyrn — manufacturing &amp; production</li>
+              <li>San Francisco State University - BS in Industrial Design</li>
+              <li>OHIO Design Studio - Industrial Designer</li>
+              <li>fyrn — Manufacturing &amp; Production</li>
             </ul>
           </div>
           <div className="w-full h-px bg-border" />
@@ -36,18 +36,19 @@ export default function About() {
               New Horizons — Seattle
             </p>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Hack Reactor — software engineering bootcamp</li>
-              <li>Apex Semi — fullstack software engineering</li>
-              <li>Zira — user experience, marketing &amp; computer vision AI</li>
+              <li>Hack Reactor — Software Engineering Bootcamp</li>
+              <li>Apex Semi — Fullstack Software Engineering</li>
+              <li>Zira — User Experience, Marketing &amp; Computer Vision AI</li>
             </ul>
           </div>
           <div className="w-full h-px bg-border" />
           <div>
             <p className="text-xs text-muted-foreground uppercase tracking-widest mb-4">
-              Now
+              Now - San Francisco
             </p>
             <p className="text-sm text-muted-foreground">
-              Currently focused on Product Design — bridging the gap between beautiful interfaces and complex engineering.
+              Plan with CoCo — Co-founder, Head of Product &amp; SWE
+              State Design Collective - Founder, Head of Product &amp; SWE
             </p>
           </div>
         </div>
