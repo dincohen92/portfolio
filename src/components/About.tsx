@@ -33,7 +33,7 @@ export default function About() {
           <div className="w-full h-px bg-border" />
           <div>
             <p className="text-xs text-muted-foreground uppercase tracking-widest mb-4">
-              New Horizons — Seattle
+              Early Career — Seattle
             </p>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>Hack Reactor — Software Engineering Bootcamp</li>
@@ -44,7 +44,7 @@ export default function About() {
           <div className="w-full h-px bg-border" />
           <div>
             <p className="text-xs text-muted-foreground uppercase tracking-widest mb-4">
-              Now - San Francisco
+              Now — San Francisco
             </p>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>Plan with CoCo — Co-founder, Head of Product &amp; SWE</li>
