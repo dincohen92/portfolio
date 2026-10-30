@@ -300,6 +300,7 @@
     ],
     "externalHref": "https://www.figma.com/deck/wwcOdZRNnSyc76F0QsUOG1",
     "externalLabel": "View deck",
+    "embedLayout": "phone",
     "coverBg": "#000000",
     "model3d": "/3d-models/slate-truck.glb",
     "images": [

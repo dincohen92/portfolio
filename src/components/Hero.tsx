@@ -39,7 +39,8 @@ export default function Hero() {
         <img
           src="/images/hero/din-headshot.png"
           alt="Portrait of Din Cohen"
-          className="w-full h-full object-cover object-top"
+          className="absolute left-0 w-full h-[120%] -top-[20%] object-cover object-top"
+          style={{ transform: `translateY(min(${offset}px, 16%))` }}
         />
       </div>
 

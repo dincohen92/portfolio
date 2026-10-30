@@ -151,7 +151,13 @@ export default async function ProjectPage({ params }: Props) {
                 <p className="text-xs text-muted-foreground uppercase tracking-widest mb-10">
                   Prototype
                 </p>
-                <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                <div
+                  className={`relative w-full ${
+                    project.embedLayout === "phone"
+                      ? "max-w-[380px] mx-auto aspect-[9/16]"
+                      : "aspect-video"
+                  }`}
+                >
                   <p className="absolute inset-0 flex items-center justify-center text-xs text-muted-foreground uppercase tracking-widest border border-border">
                     Loading prototype…
                   </p>
