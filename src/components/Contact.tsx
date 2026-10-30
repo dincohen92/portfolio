@@ -26,7 +26,7 @@ export default function Contact() {
             <a
               key={link.label}
               href={link.href}
-              target={link.href.startsWith("mailto") ? undefined : "dincohen92@gmail.com"}
+              target={link.href.startsWith("mailto") ? undefined : "_blank"}
               rel="noopener noreferrer"
               className="group flex items-center justify-between py-5 hover:opacity-60 transition-opacity"
             >

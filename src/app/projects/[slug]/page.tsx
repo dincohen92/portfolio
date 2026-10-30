@@ -82,7 +82,7 @@ export default async function ProjectPage({ params }: Props) {
                 rel="noopener noreferrer"
                 className="shrink-0 inline-flex items-center gap-2 border border-foreground px-5 py-2.5 text-sm hover:bg-foreground hover:text-background transition-colors"
               >
-                Visit site ↗
+                {project.externalLabel ?? "Visit site"} ↗
               </a>
             )}
           </div>
@@ -152,9 +152,14 @@ export default async function ProjectPage({ params }: Props) {
                   Prototype
                 </p>
                 <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
+                  <p className="absolute inset-0 flex items-center justify-center text-xs text-muted-foreground uppercase tracking-widest border border-border">
+                    Loading prototype…
+                  </p>
                   <iframe
                     className="absolute inset-0 w-full h-full border border-border"
                     src={project.figmaEmbed}
+                    title={`${project.title} prototype`}
+                    loading="lazy"
                     allowFullScreen
                   />
                 </div>

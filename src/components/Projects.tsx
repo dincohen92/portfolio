@@ -157,7 +157,9 @@ function BentoRow({
   }
 
   // ── 3 cards — featured card expands H, stacked pair expands V within column ─
-  const [pa, pb, pc] = row;
+  // Mirrored rows put the featured card on the right, so it takes the last
+  // item to keep the numbers reading left to right.
+  const [pa, pb, pc] = featuredLeft ? row : [row[2], row[0], row[1]];
   const featureFlex = h === pa.slug ? 2    : h ? 0.85 : 1.4;
   const stackFlex   = h === pa.slug ? 0.65 : h ? 1.5  : 1;
   const pbFlex      = h === pb.slug ? 1.65 : h === pc.slug ? 0.5 : 1;

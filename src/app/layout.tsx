@@ -10,14 +10,20 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Din Cohen — Product Designer",
+  metadataBase: new URL("https://dincohen.com"),
   description:
-    "Seattle based product designer and engineer specializing in user-focused design and full-stack development.",
+    "Product designer and engineer who designs and builds AI-powered products end to end.",
   openGraph: {
     title: "Din Cohen — Product Designer",
     description:
-      "Seattle based product designer and engineer specializing in user-focused design and full-stack development.",
+      "Product designer and engineer who designs and builds AI-powered products end to end.",
     url: "https://dincohen.com",
     siteName: "Dinco",
+    images: [{ url: "/images/hero/din-headshot.png", alt: "Din Cohen" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/images/hero/din-headshot.png"],
   },
 };
 

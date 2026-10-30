@@ -46,10 +46,10 @@ export default function About() {
             <p className="text-xs text-muted-foreground uppercase tracking-widest mb-4">
               Now - San Francisco
             </p>
-            <p className="text-sm text-muted-foreground">
-              Plan with CoCo — Co-founder, Head of Product &amp; SWE
-              State Design Collective - Founder, Head of Product &amp; SWE
-            </p>
+            <ul className="space-y-2 text-sm text-muted-foreground">
+              <li>Plan with CoCo — Co-founder, Head of Product &amp; SWE</li>
+              <li>State Design Collective — Founder, Head of Product &amp; SWE</li>
+            </ul>
           </div>
         </div>
       </div>

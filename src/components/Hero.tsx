@@ -38,7 +38,7 @@ export default function Hero() {
       <div className="md:hidden absolute top-0 right-0 h-[55vw] w-[55vw] overflow-hidden pointer-events-none opacity-30">
         <img
           src="/images/hero/din-headshot.png"
-          alt=""
+          alt="Portrait of Din Cohen"
           className="w-full h-full object-cover object-top"
         />
       </div>
@@ -48,7 +48,8 @@ export default function Hero() {
         <svg
           viewBox="0 0 440 580"
           className="absolute right-16 lg:right-28 top-1/2 -translate-y-[52%] h-[72vh] max-h-[620px] w-auto"
-          aria-hidden="true"
+          role="img"
+          aria-label="Portrait of Din Cohen"
         >
           <defs>
             <clipPath id="bauhaus-clip">
@@ -97,7 +98,7 @@ export default function Hero() {
           <Phrase id="din-cohen" onHover={setActiveNote}>Din Cohen</Phrase>
           {" "}is a {" "}
           <Phrase id="experienced" onHover={setActiveNote}>product designer</Phrase>
-          {" "}experienced in simplifying complex problems with simple solutions {" "}
+          {" "}who ships, designing and building AI-powered products end to end {" "}
           <Phrase id="humans" onHover={setActiveNote}>for humans</Phrase>
           .
         </p>

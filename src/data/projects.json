@@ -5,13 +5,12 @@
     "title": "STATE",
     "subtitle": "State Design Collective",
     "role": "Product Designer & Founder",
-    "year": "2024",
+    "year": "2024 – Present",
     "description": "A platform for designers to post work at any stage, get and give constructive feedback, and build your reputation within the community.",
     "tags": [
       "Product Design",
       "Project Management",
       "Prototyping",
-      "Claude code",
       "Next.js",
       "Supabase",
       "Vercel"
@@ -37,18 +36,18 @@
       {
         "label": "Research",
         "heading": "Likes don't Translate to Good Design",
-        "body": "There is no dedicated app for deign critiques. Behance, Reddit, and Instagram promote algorithms for likes not feedback. The design community deserves a better way to critique work.",
+        "body": "There is no dedicated app for design critiques. Behance, Reddit, and Instagram promote algorithms for likes not feedback. The design community deserves a better way to critique work.",
         "image": "/images/state/igor-omilaev-zRr0uBFYEtA-unsplash.jpg"
       },
       {
         "label": "Proposition",
         "heading": "A Platform Built for Designers",
-        "body": "With the ever-evolving digital world and it's rapidly changing standards, STATE needs to include all design disciplines and all methods for sharing content. Users can upload any file type from Figma prototypes to video files, to 3D models.",
+        "body": "With the ever-evolving digital world and its rapidly changing standards, STATE needs to include all design disciplines and all methods for sharing content. Users can upload any file type from Figma prototypes to video files, to 3D models.",
         "image": "/images/state/Screenshot 2026-10-06 at 9.23.48â¯AM.png"
       },
       {
         "label": "Solution",
-        "heading": "A Gated System that Rewards Constructive Feedabck",
+        "heading": "A Gated System that Rewards Constructive Feedback",
         "body": "Rather than posting projects for likes, users get scored for project posting and critiquing. posting a project requires enough crit score which creates a nurturing community around sharing work as well as feedback.",
         "image": "/images/state/Screenshot 2026-10-06 at 9.22.15â¯AM.png"
       }
@@ -62,7 +61,7 @@
     "subtitle": "Production Dashboard for Industrial Manufacturers",
     "role": "Product Designer & ML Contributor",
     "year": "2025 - 2026",
-    "description": "Led marketing and branding initiatives while contributing to computer vision AI modeling for a production analytics dashboard.",
+    "description": "Designed the brand and marketing presence and contributed to computer vision modeling for a production analytics dashboard.",
     "tags": [
       "Dashboard",
       "Computer Vision",
@@ -98,7 +97,7 @@
       {
         "label": "Proposition",
         "heading": "Design for users not for yourself",
-        "body": "This perspective let me design not just what metrics looks good on a monitor, but for what the operators actually needed to see.",
+        "body": "This perspective let me design not just what metrics look good on a monitor, but for what the operators actually needed to see.",
         "image": "/images/zira/Capture_Dash_1_better.jpg"
       },
       {
@@ -115,7 +114,7 @@
     "number": "03",
     "title": "Plan With CoCo",
     "subtitle": "AI Wedding Planning Assistant",
-    "role": "CTO & Lead Designer",
+    "role": "Lead Designer & CTO",
     "year": "2026",
     "description": "Built the full technical infrastructure and led UX design for an AI-powered wedding planning platform. From architecture decisions to user testing and deployment.",
     "tags": [
@@ -189,7 +188,7 @@
       {
         "label": "Proposition",
         "heading": "AI deals with complexity but we handle the emotions.",
-        "body": "Large language models generate personalized timelines, vendor shortlists, and budget breakdowns based on each couple's inputs. But the interface needed to feel human, conversational, unhurried, and emotionally aware of what this moment means in someone's life. That meant listening to peoples stories and designing an app that helps couples through the process instead of overloading them with AI slop.",
+        "body": "Large language models generate personalized timelines, vendor shortlists, and budget breakdowns based on each couple's inputs. But the interface needed to feel human, conversational, unhurried, and emotionally aware of what this moment means in someone's life. That meant listening to people's stories and designing an app that helps couples through the process instead of overloading them with generic AI output.",
         "image": "/images/plan-with-coco/coco icons.png"
       },
       {
@@ -216,6 +215,7 @@
       "Enterprise"
     ],
     "externalHref": "https://www.linkedin.com/company/apex-semi/about/",
+    "externalLabel": "View on LinkedIn",
     "coverBg": "#00ffff",
     "images": [
       "/images/apex-semi/apex-cover.png",
@@ -238,7 +238,7 @@
           "LDAP authentication and verification",
           "Django full stack web application",
           "Datatables UI integration",
-          "jQuerie for complex SQL searches"
+          "jQuery for complex SQL searches"
         ]
       },
       {
@@ -289,8 +289,8 @@
     "number": "05",
     "title": "Slate Auto",
     "subtitle": "EV Auto App Design",
-    "role": "Product Designer",
-    "year": "2026",
+    "role": "Product Designer · Concept",
+    "year": "2026 · 3-day sprint",
     "description": "3 day design sprint to create a concept for an electric vehicle app focused on user experience and branding.",
     "tags": [
       "Figma",
@@ -299,6 +299,7 @@
       "Product Design"
     ],
     "externalHref": "https://www.figma.com/deck/wwcOdZRNnSyc76F0QsUOG1",
+    "externalLabel": "View deck",
     "coverBg": "#000000",
     "model3d": "/3d-models/slate-truck.glb",
     "images": [
@@ -313,7 +314,7 @@
       {
         "label": "Problem",
         "heading": "New modes of transportation require new interfaces.",
-        "body": "Electric vehicle drivers not only expect, but rely on a high level of technology in their automotive products. Although Slate position's itself as the affordable truck, it still needs to meet these high standards.",
+        "body": "Electric vehicle drivers not only expect, but rely on a high level of technology in their automotive products. Although Slate positions itself as the affordable truck, it still needs to meet these high standards.",
         "image": "/images/slate-auto/3.avif"
       },
       {
@@ -325,7 +326,7 @@
       {
         "label": "Research",
         "heading": "Three days to research, audit, design, and finalize",
-        "body": "After defining the project guidelines and sprint deadlines, deep research on Slate's competitors revealed EV owner's pain points with flagship electric vehicles.",
+        "body": "After defining the project guidelines and sprint deadlines, deep research on Slate's competitors revealed EV owners' pain points with flagship electric vehicles.",
         "image": "/images/slate-auto/slate-user-research.png"
       },
       {
@@ -355,6 +356,7 @@
       "Mobile App"
     ],
     "externalHref": "https://play.google.com/store/apps/details?id=com.dinco.nib&hl=en_US",
+    "externalLabel": "View on Google Play",
     "coverBg": "#ffff00",
     "images": [
       "/images/nib/1.png"
@@ -390,13 +392,13 @@
       {
         "label": "Question",
         "heading": "What does a home page really need?",
-        "body": "How can we transform home pages to keep phone user's focused rather than reaching for apps to doom scroll?",
+        "body": "How can we transform home pages to keep phone users focused rather than reaching for apps to doom scroll?",
         "image": "/images/nib/jbareham_171013_2050_0271.webp"
       },
       {
         "label": "Proposition",
         "heading": "A simple widget with simple feedback",
-        "body": "Replacing home screen apps with an intuitive task racker that motivates users based on their aspirations and habits.",
+        "body": "Replacing home screen apps with an intuitive task tracker that motivates users based on their aspirations and habits.",
         "image": "/images/nib/nib-widget-proposition.png"
       },
       {
