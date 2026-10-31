@@ -121,42 +121,23 @@ export default async function ProjectPage({ params }: Props) {
           </p>
 
           {/* Prototype */}
-          {(project.figmaEmbed || project.externalHref) && (
+          {project.figmaEmbed && (
             <div className="border-t border-border mt-20 pt-16">
               <p className="text-xs text-muted-foreground uppercase tracking-widest mb-10">
-                {project.figmaEmbed ? "Prototype" : "Website"}
+                Prototype
               </p>
-              {project.figmaEmbed ? (
-                <div className="relative w-full aspect-video">
-                  <p className="absolute inset-0 flex items-center justify-center text-xs text-muted-foreground uppercase tracking-widest border border-border">
-                    Loading prototype…
-                  </p>
-                  <iframe
-                    className="absolute inset-0 w-full h-full border border-border"
-                    src={project.figmaEmbed}
-                    title={`${project.title} prototype`}
-                    loading="lazy"
-                    allowFullScreen
-                  />
-                </div>
-              ) : (
-                <a
-                  href={project.externalHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group relative block border border-border overflow-hidden bg-black/[0.03]"
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={"websiteImage" in project && project.websiteImage ? project.websiteImage : project.heroImage}
-                    alt={`${project.title} screenshot`}
-                    className="w-full max-h-[480px] object-contain"
-                  />
-                  <span className="absolute bottom-4 right-4 inline-flex items-center gap-2 bg-foreground text-background px-5 py-2.5 text-sm font-medium shadow-lg group-hover:opacity-80 transition-opacity">
-                    {project.externalLabel ?? "Visit site"} ↗
-                  </span>
-                </a>
-              )}
+              <div className="relative w-full aspect-video">
+                <p className="absolute inset-0 flex items-center justify-center text-xs text-muted-foreground uppercase tracking-widest border border-border">
+                  Loading prototype…
+                </p>
+                <iframe
+                  className="absolute inset-0 w-full h-full border border-border"
+                  src={project.figmaEmbed}
+                  title={`${project.title} prototype`}
+                  loading="lazy"
+                  allowFullScreen
+                />
+              </div>
             </div>
           )}
 

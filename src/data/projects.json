@@ -356,7 +356,6 @@
         "title": "Minutes to seconds",
         "caption": "Lowered query times from minutes to seconds using custom jQuery and Datatables."
       }
-    ],
-    "websiteImage": "/images/apex-semi/apex-cover.png"
+    ]
   }
 ]
