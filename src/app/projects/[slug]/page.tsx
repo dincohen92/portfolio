@@ -66,10 +66,10 @@ export default async function ProjectPage({ params }: Props) {
       <main className="pt-16">
         {/* Header */}
         <div
-          className="flex flex-col md:flex-row md:min-h-[420px] md:items-stretch"
+          className="flex flex-col md:flex-row md:h-[420px] md:items-stretch"
           style={{ backgroundColor: project.coverBg }}
         >
-          <div className="flex flex-col justify-between gap-10 px-6 md:px-12 py-10 md:w-[36%] md:shrink-0">
+          <div className="flex flex-col justify-between gap-10 px-6 md:px-12 py-8 md:w-[36%] md:shrink-0">
             <div className="flex flex-col items-start gap-4">
               <h1 className={`text-xl md:text-2xl font-medium tracking-tight ${textMain}`}>
                 {project.title}
@@ -90,7 +90,7 @@ export default async function ProjectPage({ params }: Props) {
               <img
                 src={project.logo}
                 alt={`${project.title} logo`}
-                className={`h-28 md:h-40 w-auto max-w-full object-contain self-start ${
+                className={`h-24 md:h-28 w-auto max-w-full object-contain self-start ${
                   "logoOpaque" in project && project.logoOpaque ? "mix-blend-multiply" : ""
                 }`}
               />
@@ -104,12 +104,12 @@ export default async function ProjectPage({ params }: Props) {
             </div>
           </div>
           {/* Screenshot runs the full height of the band, edge to edge */}
-          <div className="md:flex-1 md:pr-[5%] min-h-[240px] md:min-h-0">
+          <div className="relative h-[240px] md:h-auto md:flex-1 md:mr-[5%] overflow-hidden">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={project.heroImage}
               alt={`${project.title} screenshot`}
-              className="w-full h-full object-cover object-top bg-white"
+              className="absolute inset-0 w-full h-full object-cover object-top bg-white"
             />
           </div>
         </div>
