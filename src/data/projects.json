@@ -2,7 +2,7 @@
   {
     "slug": "state",
     "logo": "/images/state/state-logo.svg",
-    "heroImage": "/images/state/state-projects.png",
+    "heroImage": "/images/state/site-explore.jpg",
     "number": "01",
     "title": "STATE",
     "subtitle": "State Design Collective",
@@ -54,12 +54,19 @@
         "image": "/images/state/Screenshot 2026-10-06 at 9.22.15â¯AM.png"
       }
     ],
-    "model3d": "/3d-models/light-bulb.glb"
+    "model3d": "/3d-models/light-bulb.glb",
+    "slides": [
+      {
+        "image": "/images/state/site-explore.jpg",
+        "title": "Explore",
+        "caption": "Browse designers' work by discipline with search, filters and sorting, and post your own at any stage."
+      }
+    ]
   },
   {
     "slug": "zira",
     "logo": "/images/zira/white.png",
-    "heroImage": "/images/zira/Capture_Dash_1_better.jpg",
+    "heroImage": "/images/zira/site-hero.jpg",
     "number": "02",
     "title": "Zira",
     "subtitle": "Production Dashboard for Industrial Manufacturers",
@@ -111,12 +118,29 @@
         "image": "/images/zira/marketing-image-computer-and-vision-web.png"
       }
     ],
-    "model3d": "/3d-models/zira-camera.glb"
+    "model3d": "/3d-models/zira-camera.glb",
+    "slides": [
+      {
+        "image": "/images/zira/site-hero.jpg",
+        "title": "Live inspection",
+        "caption": "Cameras over the line flag defects like nails and stringers on each pallet, with inspected, pass rate and defect counts alongside."
+      },
+      {
+        "image": "/images/zira/site-solves.jpg",
+        "title": "What it solves",
+        "caption": "Four places a pallet costs money, from retailer chargebacks to production visibility, laid out as scannable cards."
+      },
+      {
+        "image": "/images/zira/site-beyond.jpg",
+        "title": "Beyond the dashboard",
+        "caption": "Andon, Relay, No Bad Pallets and the platform: detections that trigger action on the floor, not just a chart."
+      }
+    ]
   },
   {
     "slug": "plan-with-coco",
     "logo": "/images/plan-with-coco/coco-logo-white.png",
-    "heroImage": "/images/plan-with-coco/Screenshot 2026-10-06 at 9.51.11\u00e2\u0080\u00afAM.png",
+    "heroImage": "/images/plan-with-coco/site-chat.jpg",
     "number": "03",
     "title": "Plan With CoCo",
     "subtitle": "AI Wedding Planning Assistant",
@@ -204,7 +228,24 @@
         "image": "/images/plan-with-coco/Screenshot 2026-10-06 at 9.51.11â¯AM.png"
       }
     ],
-    "model3d": "/3d-models/heart.glb"
+    "model3d": "/3d-models/heart.glb",
+    "slides": [
+      {
+        "image": "/images/plan-with-coco/site-chat.jpg",
+        "title": "Chat",
+        "caption": "Ask Coco a budget question and it answers in plain numbers, then adds the split straight to your budget."
+      },
+      {
+        "image": "/images/plan-with-coco/site-vendors.jpg",
+        "title": "Vendors",
+        "caption": "Quotes and booking status for every vendor in one list, with Coco drafting the first outreach email."
+      },
+      {
+        "image": "/images/plan-with-coco/site-budget.jpg",
+        "title": "Budget",
+        "caption": "Committed versus remaining spend by category, plus upcoming payments Coco reminds you both about."
+      }
+    ]
   },
   {
     "slug": "apex-semi",
