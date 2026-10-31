@@ -2,7 +2,7 @@
   {
     "slug": "state",
     "logo": "/images/state/state-logo.svg",
-    "heroImage": "/images/state/site-explore.jpg",
+    "heroImage": "/images/state/app-explore.png",
     "number": "01",
     "title": "STATE",
     "subtitle": "State Design Collective",
@@ -59,12 +59,12 @@
       {
         "title": "15+ projects and 50+ users, all organic",
         "caption": "Grew the community using only SEO and GEO optimization.",
-        "image": "/images/state/site-explore.jpg"
+        "image": "/images/state/app-explore.png"
       },
       {
         "title": "Scoring that rewards critique",
         "caption": "A gamified scoring system requires users to critique more than they post.",
-        "image": "/images/state/state-score.png"
+        "image": "/images/state/app-profile-score.png"
       },
       {
         "title": "AI content screening",
