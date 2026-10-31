@@ -148,7 +148,7 @@ export default async function ProjectPage({ params }: Props) {
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src={project.heroImage}
+                    src={"websiteImage" in project && project.websiteImage ? project.websiteImage : project.heroImage}
                     alt={`${project.title} screenshot`}
                     className="w-full max-h-[480px] object-contain"
                   />
