@@ -115,7 +115,7 @@
   },
   {
     "slug": "plan-with-coco",
-    "logo": "/images/plan-with-coco/coco pink logo.png",
+    "logo": "/images/plan-with-coco/coco-logo-white.png",
     "heroImage": "/images/plan-with-coco/Screenshot 2026-10-06 at 9.51.11\u00e2\u0080\u00afAM.png",
     "number": "03",
     "title": "Plan With CoCo",
@@ -209,6 +209,7 @@
   {
     "slug": "apex-semi",
     "logo": "/images/apex-semi/apex-cover.png",
+    "logoOpaque": true,
     "heroImage": "/images/apex-semi/apex-dashboard.png",
     "number": "04",
     "title": "Apex Semi (now Cadence)",
@@ -356,6 +357,7 @@
   {
     "slug": "nib",
     "logo": "/images/nib/1.png",
+    "logoOpaque": true,
     "heroImage": "/images/nib/nib-feature-graphic.png",
     "number": "06",
     "title": "nib",

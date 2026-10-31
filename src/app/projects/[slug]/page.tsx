@@ -37,8 +37,8 @@ export default async function ProjectPage({ params }: Props) {
   const dark = isColorDark(project.coverBg);
   const textMain = dark ? "text-white" : "text-foreground";
   const tagStyle = dark
-    ? "border-white/40 text-white/80"
-    : "border-foreground/40 text-foreground/80";
+    ? "border-white text-white"
+    : "border-foreground text-foreground";
 
   // Explicit slides win; otherwise fall back to the case-study sections that have an image.
   const slides: Slide[] =
@@ -74,20 +74,13 @@ export default async function ProjectPage({ params }: Props) {
 
       <main className="pt-16">
         {/* Header */}
-        <div className="section-padding pt-16 md:pt-20" style={{ backgroundColor: project.coverBg }}>
-          <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
-            <div className="flex items-center gap-4">
-              {"logo" in project && project.logo && (
-                <span
-                  className={`flex h-14 w-14 items-center justify-center overflow-hidden ${
-                    dark ? "" : "bg-white"
-                  }`}
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={project.logo} alt={`${project.title} logo`} className="h-full w-full object-contain" />
-                </span>
-              )}
-              <h1 className={`text-3xl md:text-5xl font-medium tracking-tight ${textMain}`}>
+        <div
+          className="flex flex-col md:flex-row md:min-h-[420px] md:items-stretch"
+          style={{ backgroundColor: project.coverBg }}
+        >
+          <div className="flex flex-col justify-between gap-10 px-6 md:px-12 py-10 md:w-[36%] md:shrink-0">
+            <div className="flex items-center gap-3">
+              <h1 className={`text-xl md:text-2xl font-medium tracking-tight ${textMain}`}>
                 {project.title}
               </h1>
               {project.externalHref && (
@@ -97,32 +90,42 @@ export default async function ProjectPage({ params }: Props) {
                   rel="noopener noreferrer"
                   aria-label={project.externalLabel ?? "Visit site"}
                   title={project.externalLabel ?? "Visit site"}
-                  className={`text-2xl hover:opacity-60 transition-opacity ${textMain}`}
+                  className={`text-xl hover:opacity-60 transition-opacity ${textMain}`}
                 >
                   ↗
                 </a>
               )}
             </div>
-            <div className="flex flex-wrap justify-center gap-2 mt-6">
+            {"logo" in project && project.logo && (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={project.logo}
+                alt={`${project.title} logo`}
+                className={`h-28 md:h-40 w-auto max-w-full object-contain self-start ${
+                  "logoOpaque" in project && project.logoOpaque ? "mix-blend-multiply" : ""
+                }`}
+              />
+            )}
+            <div className="flex flex-wrap gap-2">
               {project.tags.map((tag) => (
-                <span key={tag} className={`text-xs border px-2.5 py-0.5 ${tagStyle}`}>
+                <span key={tag} className={`text-xs border px-3 py-1 ${tagStyle}`}>
                   {tag}
                 </span>
               ))}
             </div>
           </div>
-          {/* Hero screenshot straddles the bottom edge of the band */}
-          <div className="max-w-5xl mx-auto mt-12 -mb-16 md:-mb-24 relative z-10">
+          {/* Screenshot runs the full height of the band, edge to edge */}
+          <div className="md:flex-1 md:pr-[5%] min-h-[240px] md:min-h-0">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={project.heroImage}
               alt={`${project.title} screenshot`}
-              className="w-full max-h-[560px] object-contain object-top bg-white shadow-xl"
+              className="w-full h-full object-cover object-top bg-white"
             />
           </div>
         </div>
 
-        <div className="section-padding pt-32 md:pt-44 pb-20 max-w-5xl mx-auto">
+        <div className="section-padding pt-20 pb-20 max-w-5xl mx-auto">
           {/* Description */}
           <p className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto text-center">
             {project.description}
