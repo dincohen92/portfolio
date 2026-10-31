@@ -245,7 +245,8 @@
       },
       {
         "title": "Automatic ticketing",
-        "caption": "The LLM chatbot automatically creates help-desk tickets."
+        "caption": "The LLM chatbot automatically creates help-desk tickets.",
+        "image": "/images/plan-with-coco/Screenshot 2026-10-06 at 9.51.11â¯AM.png"
       },
       {
         "title": "Custom AI skills",
