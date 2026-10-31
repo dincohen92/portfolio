@@ -1,7 +1,10 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import projects from "@/data/projects.json";
+
+const CardModel = dynamic(() => import("./CardModel"), { ssr: false });
 
 type Project = (typeof projects)[0];
 
@@ -49,12 +52,22 @@ function CardContent({ project }: { project: Project }) {
       {/* Base: always solid color */}
       <div className="absolute inset-0" style={{ backgroundColor: project.coverBg }} />
 
-      {/* Image: fades in on hover */}
+      {/* Image: mobile only, since there is no hover there */}
       {project.images[0] && (
         <div
-          className="absolute inset-0 bg-center bg-cover opacity-20 md:opacity-0 md:group-hover:opacity-40 transition-opacity duration-700 ease-out"
+          className="absolute inset-0 bg-center bg-cover opacity-20 md:hidden"
           style={{ backgroundImage: `url("${project.images[0]}")` }}
         />
+      )}
+
+      {/* Spinning 3D object — fades out on hover as the logo takes its place */}
+      {project.model3d && (
+        <div className="absolute inset-0 pointer-events-none transition-opacity duration-300 md:group-hover:opacity-0">
+          {/* Fixed-size canvas centered with CSS: resizing it with the card makes it redraw in steps instead of sliding */}
+          <div className="absolute left-1/2 top-1/2 w-[200px] h-[200px] -translate-x-1/2 -translate-y-1/2">
+            <CardModel src={project.model3d} bright={dark} />
+          </div>
+        </div>
       )}
 
       {/* Default label — number + name only */}
@@ -69,6 +82,18 @@ function CardContent({ project }: { project: Project }) {
           <span className={`text-xs font-mono ${textFaint}`}>{project.number}</span>
           <span className={`text-sm ${textSub}`}>↗</span>
         </div>
+        {project.logo && (
+          <div className="flex-1 flex items-center justify-center min-h-0 py-3">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={project.logo}
+              alt={`${project.title} logo`}
+              className={`max-h-full max-w-[60%] w-auto object-contain ${
+                "logoOpaque" in project && project.logoOpaque ? "mix-blend-multiply" : ""
+              }`}
+            />
+          </div>
+        )}
         <div>
           <h3 className={`text-xl font-medium tracking-tight ${textMain} mb-2`}>{project.title}</h3>
           <p className={`text-xs ${textFaint} uppercase tracking-widest mb-1`}>{project.role}</p>
