@@ -264,7 +264,7 @@
     "slug": "apex-semi",
     "logo": "/images/apex-semi/apex-cover.png",
     "logoOpaque": true,
-    "heroImage": "/images/apex-semi/apex-dashboard.png",
+    "heroImage": "/images/apex-semi/apex-02-overview.png",
     "number": "04",
     "title": "Apex Semi (now Cadence)",
     "subtitle": "Dashboard for Batch Computing Software",
@@ -281,8 +281,7 @@
     "externalLabel": "View on LinkedIn",
     "coverBg": "#00ffff",
     "images": [
-      "/images/apex-semi/apex-cover.png",
-      "/images/apex-semi/apex-dashboard.png"
+      "/images/apex-semi/apex-cover.png"
     ],
     "figmaEmbed": null,
     "features": [
@@ -336,7 +335,7 @@
         "label": "Proposition",
         "heading": "Match the density of the data with the precision of the interface.",
         "body": "The design language was deliberate and restrained: no unnecessary visual decoration, clear information hierarchy, and role-based views that surface only what each user type needs. Security wasn't bolted on — it was woven into every interaction through the LDAP integration.",
-        "image": "/images/apex-semi/apex-dashboard.png"
+        "image": "/images/apex-semi/apex-03-flights.png"
       },
       {
         "label": "Solution",
@@ -348,13 +347,24 @@
     "model3d": "/3d-models/computer.glb",
     "slides": [
       {
+        "image": "/images/apex-semi/apex-07-query-jobs.png",
         "title": "Querying 11+ million entries",
-        "caption": "Designed a web dashboard to query an 11+ million entry database.",
-        "image": "/images/apex-semi/apex-dashboard.png"
+        "caption": "Designed a web dashboard to query an 11+ million entry database."
       },
       {
+        "image": "/images/apex-semi/apex-08-query-flights.png",
         "title": "Minutes to seconds",
         "caption": "Lowered query times from minutes to seconds using custom jQuery and Datatables."
+      },
+      {
+        "image": "/images/apex-semi/apex-02-overview.png",
+        "title": "Cluster overview",
+        "caption": "Running, pending and failure rates at a glance, with the top reasons jobs failed."
+      },
+      {
+        "image": "/images/apex-semi/apex-06-job-detail.png",
+        "title": "Job detail",
+        "caption": "Every job's exit reason, memory and CPU use, command and history in one view."
       }
     ]
   }
