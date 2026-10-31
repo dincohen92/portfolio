@@ -138,13 +138,7 @@ export default async function ProjectPage({ params }: Props) {
                 {project.figmaEmbed ? "Prototype" : "Website"}
               </p>
               {project.figmaEmbed ? (
-                <div
-                  className={`relative w-full ${
-                    project.embedLayout === "phone"
-                      ? "max-w-[380px] mx-auto aspect-[9/16]"
-                      : "aspect-video"
-                  }`}
-                >
+                <div className="relative w-full aspect-video">
                   <p className="absolute inset-0 flex items-center justify-center text-xs text-muted-foreground uppercase tracking-widest border border-border">
                     Loading prototype…
                   </p>
