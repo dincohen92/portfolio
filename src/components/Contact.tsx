@@ -1,8 +1,9 @@
 const links = [
-  { label: "Email", value: "dincohen92@gmail.com", href: "mailto:dincohen92@gmail.com" },
-  { label: "LinkedIn", value: "linkedin.com/in/dincohen", href: "https://linkedin.com/in/dincohen/" },
-  { label: "GitHub", value: "github.com/dincohen92", href: "https://github.com/dincohen92" },
-  { label: "Instagram", value: "@dinco.design", href: "https://instagram.com/dinco.design/" },
+  { label: "Resume", value: "Download PDF", href: "/DinCohen_Resume.pdf", download: true },
+  { label: "Email", value: "dincohen92@gmail.com", href: "mailto:dincohen92@gmail.com", download: false },
+  { label: "LinkedIn", value: "linkedin.com/in/dincohen", href: "https://linkedin.com/in/dincohen/", download: false },
+  { label: "GitHub", value: "github.com/dincohen92", href: "https://github.com/dincohen92", download: false },
+  { label: "Instagram", value: "@dinco.design", href: "https://instagram.com/dinco.design/", download: false },
 ];
 
 export default function Contact() {
@@ -26,7 +27,8 @@ export default function Contact() {
             <a
               key={link.label}
               href={link.href}
-              target={link.href.startsWith("mailto") ? undefined : "_blank"}
+              target={link.download || link.href.startsWith("mailto") ? undefined : "_blank"}
+              download={link.download || undefined}
               rel="noopener noreferrer"
               className="group flex items-center justify-between py-5 hover:opacity-60 transition-opacity"
             >

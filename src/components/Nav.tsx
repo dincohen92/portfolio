@@ -5,6 +5,8 @@ const links = [
   { label: "Contact", href: "#contact" },
 ];
 
+const RESUME_HREF = "/DinCohen_Resume.pdf";
+
 export default function Nav() {
 
   return (
@@ -28,6 +30,13 @@ export default function Nav() {
               {link.label}
             </a>
           ))}
+          <a
+            href={RESUME_HREF}
+            download
+            className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            Resume
+          </a>
         </nav>
       </div>
     </header>
