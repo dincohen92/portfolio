@@ -36,6 +36,7 @@ export default async function ProjectPage({ params }: Props) {
 
   const dark = isColorDark(project.coverBg);
   const textMain = dark ? "text-white" : "text-foreground";
+  const buttonStyle = dark ? "bg-white text-black" : "bg-foreground text-background";
   const tagStyle = dark
     ? "border-white text-white"
     : "border-foreground text-foreground";
@@ -69,7 +70,7 @@ export default async function ProjectPage({ params }: Props) {
           style={{ backgroundColor: project.coverBg }}
         >
           <div className="flex flex-col justify-between gap-10 px-6 md:px-12 py-10 md:w-[36%] md:shrink-0">
-            <div className="flex items-center gap-3">
+            <div className="flex flex-col items-start gap-4">
               <h1 className={`text-xl md:text-2xl font-medium tracking-tight ${textMain}`}>
                 {project.title}
               </h1>
@@ -78,11 +79,9 @@ export default async function ProjectPage({ params }: Props) {
                   href={project.externalHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={project.externalLabel ?? "Visit site"}
-                  title={project.externalLabel ?? "Visit site"}
-                  className={`text-xl hover:opacity-60 transition-opacity ${textMain}`}
+                  className={`inline-flex items-center gap-2 px-5 py-2.5 text-sm font-medium transition-opacity hover:opacity-80 ${buttonStyle}`}
                 >
-                  ↗
+                  {project.externalLabel ?? "Visit site"} ↗
                 </a>
               )}
             </div>
@@ -153,7 +152,7 @@ export default async function ProjectPage({ params }: Props) {
                     alt={`${project.title} screenshot`}
                     className="w-full max-h-[480px] object-contain"
                   />
-                  <span className="absolute bottom-4 right-4 inline-flex items-center gap-2 bg-background border border-foreground px-5 py-2.5 text-sm group-hover:bg-foreground group-hover:text-background transition-colors">
+                  <span className="absolute bottom-4 right-4 inline-flex items-center gap-2 bg-foreground text-background px-5 py-2.5 text-sm font-medium shadow-lg group-hover:opacity-80 transition-opacity">
                     {project.externalLabel ?? "Visit site"} ↗
                   </span>
                 </a>
