@@ -1,11 +1,8 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import dynamic from "next/dynamic";
 import type { Metadata } from "next";
 import projects from "@/data/projects.json";
-import { ZoomImage } from "@/components/ZoomImage";
-
-const ModelViewer = dynamic(() => import("@/components/ModelViewer"), { ssr: false });
+import ProjectCarousel, { type Slide } from "@/components/ProjectCarousel";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -23,10 +20,37 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
+// Perceived brightness — true if the hex color reads as dark
+function isColorDark(hex: string): boolean {
+  const h = hex.replace("#", "");
+  const r = parseInt(h.substring(0, 2), 16);
+  const g = parseInt(h.substring(2, 4), 16);
+  const b = parseInt(h.substring(4, 6), 16);
+  return (r * 299 + g * 587 + b * 114) / 1000 < 64;
+}
+
 export default async function ProjectPage({ params }: Props) {
   const { slug } = await params;
   const project = projects.find((p) => p.slug === slug);
   if (!project) notFound();
+
+  const dark = isColorDark(project.coverBg);
+  const textMain = dark ? "text-white" : "text-foreground";
+  const tagStyle = dark
+    ? "border-white/40 text-white/80"
+    : "border-foreground/40 text-foreground/80";
+
+  // Explicit slides win; otherwise fall back to the case-study sections that have an image.
+  const slides: Slide[] =
+    "slides" in project && Array.isArray(project.slides)
+      ? (project.slides as Slide[])
+      : project.sections
+          .filter((section) => section.image)
+          .map((section) => ({
+            image: section.image as string,
+            title: section.heading,
+            caption: section.body,
+          }));
 
   return (
     <>
@@ -49,108 +73,68 @@ export default async function ProjectPage({ params }: Props) {
       </header>
 
       <main className="pt-16">
-        {/* Cover */}
-        {"model3d" in project && project.model3d ? (
-          <ModelViewer src={project.model3d} bg={project.coverBg} />
-        ) : (
-          <div
-            className="w-full h-[25vh] min-h-[200px]"
-            style={{ backgroundColor: project.coverBg }}
-          />
-        )}
-
-        {/* Content */}
-        <div className="section-padding py-20 max-w-5xl mx-auto">
-          {/* Header */}
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 items-start mb-16">
-            <div>
-              <span className="text-xs font-mono text-muted-foreground">
-                {project.number}
-              </span>
-              <h1 className="text-4xl md:text-6xl font-medium tracking-tight leading-tight mt-2">
+        {/* Header */}
+        <div className="section-padding pt-16 md:pt-20" style={{ backgroundColor: project.coverBg }}>
+          <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
+            <div className="flex items-center gap-4">
+              {"logo" in project && project.logo && (
+                <span
+                  className={`flex h-14 w-14 items-center justify-center overflow-hidden ${
+                    dark ? "" : "bg-white"
+                  }`}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={project.logo} alt={`${project.title} logo`} className="h-full w-full object-contain" />
+                </span>
+              )}
+              <h1 className={`text-3xl md:text-5xl font-medium tracking-tight ${textMain}`}>
                 {project.title}
               </h1>
-              <p className="text-xl text-muted-foreground mt-2">
-                {project.subtitle}
-              </p>
+              {project.externalHref && (
+                <a
+                  href={project.externalHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={project.externalLabel ?? "Visit site"}
+                  title={project.externalLabel ?? "Visit site"}
+                  className={`text-2xl hover:opacity-60 transition-opacity ${textMain}`}
+                >
+                  ↗
+                </a>
+              )}
             </div>
-
-            {project.externalHref && (
-              <a
-                href={project.externalHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="shrink-0 inline-flex items-center gap-2 border border-foreground px-5 py-2.5 text-sm hover:bg-foreground hover:text-background transition-colors"
-              >
-                {project.externalLabel ?? "Visit site"} ↗
-              </a>
-            )}
-          </div>
-
-          {/* Meta */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pb-16 border-b border-border">
-            <div>
-              <p className="text-xs text-muted-foreground uppercase tracking-widest mb-2">
-                Role
-              </p>
-              <p className="text-sm">{project.role}</p>
-            </div>
-            <div>
-              <p className="text-xs text-muted-foreground uppercase tracking-widest mb-2">
-                Year
-              </p>
-              <p className="text-sm">{project.year}</p>
-            </div>
-            <div className="col-span-2">
-              <p className="text-xs text-muted-foreground uppercase tracking-widest mb-2">
-                Disciplines
-              </p>
-              <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-xs border border-border px-2.5 py-0.5 text-muted-foreground"
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div className="col-span-2 md:col-span-4">
-              <p className="text-xs text-muted-foreground uppercase tracking-widest mb-2">
-                Description
-              </p>
-              <p className="text-sm leading-relaxed">{project.description}</p>
-            </div>
-          </div>
-          
-          {/* Features */}
-          {"features" in project && Array.isArray(project.features) && project.features.length > 0 && (
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-16 border-b border-border">
-              {(project.features as { category: string; items: string[] }[]).map((group) => (
-                <div key={group.category}>
-                  <p className="text-xs text-muted-foreground uppercase tracking-widest mb-3">
-                    {group.category}
-                  </p>
-                  <ul className="space-y-1">
-                    {group.items.map((item) => (
-                      <li key={item} className="text-sm text-foreground">
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+            <div className="flex flex-wrap justify-center gap-2 mt-6">
+              {project.tags.map((tag) => (
+                <span key={tag} className={`text-xs border px-2.5 py-0.5 ${tagStyle}`}>
+                  {tag}
+                </span>
               ))}
             </div>
-          )}
+          </div>
+          {/* Hero screenshot straddles the bottom edge of the band */}
+          <div className="max-w-5xl mx-auto mt-12 -mb-16 md:-mb-24 relative z-10">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={project.heroImage}
+              alt={`${project.title} screenshot`}
+              className="w-full max-h-[560px] object-contain object-top bg-white shadow-xl"
+            />
+          </div>
+        </div>
 
-          {/* Figma prototype embed */}
-          {project.figmaEmbed && (
-            <div className="border-t border-border section-padding py-20">
-              <div className="max-w-5xl mx-auto">
-                <p className="text-xs text-muted-foreground uppercase tracking-widest mb-10">
-                  Prototype
-                </p>
+        <div className="section-padding pt-32 md:pt-44 pb-20 max-w-5xl mx-auto">
+          {/* Description */}
+          <p className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto text-center">
+            {project.description}
+          </p>
+
+          {/* Prototype */}
+          {(project.figmaEmbed || project.externalHref) && (
+            <div className="border-t border-border mt-20 pt-16">
+              <p className="text-xs text-muted-foreground uppercase tracking-widest mb-10">
+                {project.figmaEmbed ? "Prototype" : "Website"}
+              </p>
+              {project.figmaEmbed ? (
                 <div
                   className={`relative w-full ${
                     project.embedLayout === "phone"
@@ -169,45 +153,37 @@ export default async function ProjectPage({ params }: Props) {
                     allowFullScreen
                   />
                 </div>
-              </div>
+              ) : (
+                <a
+                  href={project.externalHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group relative block border border-border overflow-hidden bg-black/[0.03]"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={project.heroImage}
+                    alt={`${project.title} screenshot`}
+                    className="w-full max-h-[480px] object-contain"
+                  />
+                  <span className="absolute bottom-4 right-4 inline-flex items-center gap-2 bg-background border border-foreground px-5 py-2.5 text-sm group-hover:bg-foreground group-hover:text-background transition-colors">
+                    {project.externalLabel ?? "Visit site"} ↗
+                  </span>
+                </a>
+              )}
             </div>
           )}
 
-          {/* Sections */}
-          {project.sections.map((section, i) => {
-            const flip = i % 2 !== 0;
-            return (
-              <div key={i} className="border-t border-border pt-16 pb-4">
-                <div
-                  className={`flex flex-col ${
-                    section.image
-                      ? flip
-                        ? "md:flex-row-reverse"
-                        : "md:flex-row"
-                      : ""
-                  } gap-12 md:gap-20 items-center`}
-                >
-                  <div className={section.image ? "md:flex-1" : "max-w-2xl"}>
-                    <span className="text-xs font-mono text-muted-foreground uppercase tracking-widest mb-4 block">
-                      {section.label}
-                    </span>
-                    <h2 className="text-2xl md:text-3xl font-medium tracking-tight mb-5 leading-tight">
-                      {section.heading}
-                    </h2>
-                    <p className="text-muted-foreground leading-relaxed">
-                      {section.body}
-                    </p>
-                  </div>
-                  {section.image && (
-                    <ZoomImage src={section.image} alt={section.heading} />
-                  )}
-                </div>
-              </div>
-            );
-          })}
+          {/* Features carousel */}
+          {slides.length > 0 && (
+            <div className="border-t border-border mt-20 pt-16">
+              <p className="text-xs text-muted-foreground uppercase tracking-widest mb-10">
+                Features
+              </p>
+              <ProjectCarousel slides={slides} />
+            </div>
+          )}
         </div>
-
-
 
         {/* Contact CTA */}
         <div className="border-t border-border section-padding py-20">

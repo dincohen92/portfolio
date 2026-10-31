@@ -1,6 +1,8 @@
 [
   {
     "slug": "state",
+    "logo": "/images/state/state-logo.svg",
+    "heroImage": "/images/state/state-projects.png",
     "number": "01",
     "title": "STATE",
     "subtitle": "State Design Collective",
@@ -56,6 +58,8 @@
   },
   {
     "slug": "zira",
+    "logo": "/images/zira/white.png",
+    "heroImage": "/images/zira/Capture_Dash_1_better.jpg",
     "number": "02",
     "title": "Zira",
     "subtitle": "Production Dashboard for Industrial Manufacturers",
@@ -111,6 +115,8 @@
   },
   {
     "slug": "plan-with-coco",
+    "logo": "/images/plan-with-coco/coco pink logo.png",
+    "heroImage": "/images/plan-with-coco/Screenshot 2026-10-06 at 9.51.11\u00e2\u0080\u00afAM.png",
     "number": "03",
     "title": "Plan With CoCo",
     "subtitle": "AI Wedding Planning Assistant",
@@ -202,6 +208,8 @@
   },
   {
     "slug": "apex-semi",
+    "logo": "/images/apex-semi/apex-cover.png",
+    "heroImage": "/images/apex-semi/apex-dashboard.png",
     "number": "04",
     "title": "Apex Semi (now Cadence)",
     "subtitle": "Dashboard for Batch Computing Software",
@@ -286,6 +294,7 @@
   },
   {
     "slug": "slate-auto",
+    "heroImage": "/images/slate-auto/slate-prototype.png",
     "number": "05",
     "title": "Slate Auto",
     "subtitle": "EV Auto App Design",
@@ -346,6 +355,8 @@
   },
   {
     "slug": "nib",
+    "logo": "/images/nib/1.png",
+    "heroImage": "/images/nib/nib-feature-graphic.png",
     "number": "06",
     "title": "nib",
     "subtitle": "Task Tracking Mobile App",
