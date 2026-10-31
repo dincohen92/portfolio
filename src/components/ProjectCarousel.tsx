@@ -1,7 +1,7 @@
 "use client";
 import { useRef, useState } from "react";
 
-export type Slide = { image: string; title: string; caption: string };
+export type Slide = { image?: string; title: string; caption: string };
 
 export default function ProjectCarousel({ slides }: { slides: Slide[] }) {
   const trackRef = useRef<HTMLDivElement>(null);
@@ -33,11 +33,17 @@ export default function ProjectCarousel({ slides }: { slides: Slide[] }) {
         >
           {slides.map((s) => (
             <div
-              key={s.image}
+              key={s.title}
               className="w-full shrink-0 snap-center flex items-center justify-center bg-black/[0.03] border border-border h-[320px] md:h-[480px]"
             >
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={s.image} alt={s.title} className="max-w-full max-h-full object-contain" />
+              {s.image ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={s.image} alt={s.title} className="max-w-full max-h-full object-contain" />
+              ) : (
+                <p className="px-8 md:px-24 text-3xl md:text-5xl font-medium tracking-tight leading-tight text-center">
+                  {s.title}
+                </p>
+              )}
             </div>
           ))}
         </div>
@@ -66,7 +72,7 @@ export default function ProjectCarousel({ slides }: { slides: Slide[] }) {
       </div>
 
       <div className="max-w-2xl mx-auto text-center mt-8">
-        <h3 className="text-lg font-medium tracking-tight mb-2">{slide.title}</h3>
+        {slide.image && <h3 className="text-lg font-medium tracking-tight mb-2">{slide.title}</h3>}
         <p className="text-sm text-muted-foreground leading-relaxed">{slide.caption}</p>
       </div>
 
@@ -74,7 +80,7 @@ export default function ProjectCarousel({ slides }: { slides: Slide[] }) {
         <div className="flex justify-center gap-2 mt-6">
           {slides.map((s, i) => (
             <button
-              key={s.image}
+              key={s.title}
               type="button"
               aria-label={`Go to slide ${i + 1}`}
               onClick={() => goTo(i)}

@@ -57,9 +57,18 @@
     "model3d": "/3d-models/light-bulb.glb",
     "slides": [
       {
-        "image": "/images/state/site-explore.jpg",
-        "title": "Explore",
-        "caption": "Browse designers' work by discipline with search, filters and sorting, and post your own at any stage."
+        "title": "15+ projects and 50+ users, all organic",
+        "caption": "Grew the community using only SEO and GEO optimization.",
+        "image": "/images/state/site-explore.jpg"
+      },
+      {
+        "title": "Scoring that rewards critique",
+        "caption": "A gamified scoring system requires users to critique more than they post.",
+        "image": "/images/state/state-score.png"
+      },
+      {
+        "title": "AI content screening",
+        "caption": "The ChatGPT API screens uploads for explicit content."
       }
     ]
   },
@@ -121,19 +130,18 @@
     "model3d": "/3d-models/zira-camera.glb",
     "slides": [
       {
-        "image": "/images/zira/site-hero.jpg",
-        "title": "Live inspection",
-        "caption": "Cameras over the line flag defects like nails and stringers on each pallet, with inspected, pass rate and defect counts alongside."
+        "title": "Sales up 29%",
+        "caption": "Updated the brand guide, website and sales assets, driving sales by 29%.",
+        "image": "/images/zira/site-hero.jpg"
       },
       {
-        "image": "/images/zira/site-solves.jpg",
-        "title": "What it solves",
-        "caption": "Four places a pallet costs money, from retailer chargebacks to production visibility, laid out as scannable cards."
+        "title": "Computer vision on the production line",
+        "caption": "Trained AI computer vision models to track production lines and provide metrics.",
+        "image": "/images/zira/Capture_Dash_1_better.jpg"
       },
       {
-        "image": "/images/zira/site-beyond.jpg",
-        "title": "Beyond the dashboard",
-        "caption": "Andon, Relay, No Bad Pallets and the platform: detections that trigger action on the floor, not just a chart."
+        "title": "HTML marketing emails",
+        "caption": "Designed and shipped HTML-based marketing emails."
       }
     ]
   },
@@ -231,19 +239,23 @@
     "model3d": "/3d-models/heart.glb",
     "slides": [
       {
-        "image": "/images/plan-with-coco/site-chat.jpg",
-        "title": "Chat",
-        "caption": "Ask Coco a budget question and it answers in plain numbers, then adds the split straight to your budget."
+        "title": "Admin dashboard for traffic and ad performance",
+        "caption": "Custom internal dashboard tracking organic traffic, CPC ad performance and A/B testing metrics. Variants showed landing page and ad clickthrough data, boosting traffic by 100+ clicks per day.",
+        "image": "/images/plan-with-coco/admin-traffic.jpg"
       },
       {
-        "image": "/images/plan-with-coco/site-vendors.jpg",
-        "title": "Vendors",
-        "caption": "Quotes and booking status for every vendor in one list, with Coco drafting the first outreach email."
+        "title": "Automatic ticketing",
+        "caption": "The LLM chatbot automatically creates help-desk tickets."
       },
       {
-        "image": "/images/plan-with-coco/site-budget.jpg",
-        "title": "Budget",
-        "caption": "Committed versus remaining spend by category, plus upcoming payments Coco reminds you both about."
+        "title": "Custom AI skills",
+        "caption": "Built skills like vendor outreach and confirmation so Coco can draft and follow up on vendor emails.",
+        "image": "/images/plan-with-coco/site-vendors.jpg"
+      },
+      {
+        "title": "Designed 0 to 1",
+        "caption": "Took the app from ideation to pixel-perfect icons.",
+        "image": "/images/plan-with-coco/coco icons.png"
       }
     ]
   },
@@ -332,6 +344,17 @@
         "image": null
       }
     ],
-    "model3d": "/3d-models/computer.glb"
+    "model3d": "/3d-models/computer.glb",
+    "slides": [
+      {
+        "title": "Querying 11+ million entries",
+        "caption": "Designed a web dashboard to query an 11+ million entry database.",
+        "image": "/images/apex-semi/apex-dashboard.png"
+      },
+      {
+        "title": "Minutes to seconds",
+        "caption": "Lowered query times from minutes to seconds using custom jQuery and Datatables."
+      }
+    ]
   }
 ]

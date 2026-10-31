@@ -40,17 +40,7 @@ export default async function ProjectPage({ params }: Props) {
     ? "border-white text-white"
     : "border-foreground text-foreground";
 
-  // Explicit slides win; otherwise fall back to the case-study sections that have an image.
-  const slides: Slide[] =
-    "slides" in project && Array.isArray(project.slides)
-      ? (project.slides as Slide[])
-      : project.sections
-          .filter((section) => section.image)
-          .map((section) => ({
-            image: section.image as string,
-            title: section.heading,
-            caption: section.body,
-          }));
+  const slides = project.slides as Slide[];
 
   return (
     <>
@@ -175,7 +165,7 @@ export default async function ProjectPage({ params }: Props) {
           {slides.length > 0 && (
             <div className="border-t border-border mt-20 pt-16">
               <p className="text-xs text-muted-foreground uppercase tracking-widest mb-10">
-                Features
+                What I Built
               </p>
               <ProjectCarousel slides={slides} />
             </div>
