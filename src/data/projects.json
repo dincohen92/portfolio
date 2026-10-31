@@ -262,8 +262,7 @@
   },
   {
     "slug": "apex-semi",
-    "logo": "/images/apex-semi/apex-cover.png",
-    "logoOpaque": true,
+    "logo": "/images/apex-semi/apex-logo.svg",
     "heroImage": "/images/apex-semi/apex-02-overview.png",
     "number": "04",
     "title": "Apex Semi (now Cadence)",

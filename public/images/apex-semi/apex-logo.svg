@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="110 300 1280 320" role="img" aria-label="Apex Semiconductor">
+  <polygon points="286,313 348,423 224,423" fill="#2f9ad8"/>
+  <polygon points="205,457 283,457 203,605 121,605" fill="#26578f"/>
+  <polygon points="289,457 368,457 451,605 370,605" fill="#26578f"/>
+  <g fill="#26578f" fill-rule="evenodd">
+    <path d="M606 360H638L710 524H678L661 486H581L565 524H532ZM621 392L651 461H591Z"/>
+    <path d="M791 360H866C905 360 929 385 929 417C929 449 905 472 866 472H821V524H791ZM821 386V447H862C884 447 897 435 897 417C897 399 884 386 862 386Z"/>
+    <path d="M1008 360H1133V385H1008ZM1008 430H1122V455H1008ZM1008 498H1133V524H1008Z"/>
+    <path d="M1212 360H1244L1291 421L1337 360H1369L1309 441L1371 524H1337L1291 462L1243 524H1210L1271 441Z"/>
+  </g>
+  <text x="617" y="607" font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-weight="600" font-size="38" fill="#2f9ad8" textLength="688" lengthAdjust="spacing">SEMICONDUCTOR</text>
+</svg>
