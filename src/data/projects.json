@@ -357,14 +357,13 @@
         "caption": "Lowered query times from minutes to seconds using custom jQuery and Datatables."
       },
       {
-        "image": "/images/apex-semi/apex-02-overview.png",
-        "title": "Cluster overview",
-        "caption": "Running, pending and failure rates at a glance, with the top reasons jobs failed."
+        "image": "/images/apex-semi/apex-01-sign-in.png",
+        "title": "LDAP-secured sign-in",
+        "caption": "Integrated LDAP authentication and verification so access to the portal is tied to existing company accounts."
       },
       {
-        "image": "/images/apex-semi/apex-06-job-detail.png",
-        "title": "Job detail",
-        "caption": "Every job's exit reason, memory and CPU use, command and history in one view."
+        "title": "Django, end to end",
+        "caption": "Built the full stack Django web application, from the LDAP integration to the dashboard UI."
       }
     ]
   }
