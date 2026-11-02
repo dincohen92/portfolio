@@ -73,7 +73,7 @@ function CardContent({ project }: { project: Project }) {
       {/* Default label — number + name only */}
       <div className="relative mt-auto p-6 transition-opacity duration-300 group-hover:opacity-0">
         <span className={`text-xs font-mono block mb-1.5 ${textFaint}`}>{project.number}</span>
-        <h3 className={`text-xl font-medium tracking-tight ${textMain}`}>{project.title}</h3>
+        <h3 className={`font-display text-xl font-medium tracking-tight ${textMain}`}>{project.title}</h3>
       </div>
 
       {/* Hover reveal — number, name, role, year, tags */}
@@ -95,7 +95,7 @@ function CardContent({ project }: { project: Project }) {
           </div>
         )}
         <div>
-          <h3 className={`text-xl font-medium tracking-tight ${textMain} mb-2`}>{project.title}</h3>
+          <h3 className={`font-display text-xl font-medium tracking-tight ${textMain} mb-2`}>{project.title}</h3>
           <p className={`text-xs ${textFaint} uppercase tracking-widest mb-1`}>{project.role}</p>
           <p className={`text-xs font-mono ${textFaint} mb-4`}>{project.year}</p>
           <div className="flex flex-wrap gap-2">

@@ -7,7 +7,7 @@ export default function About() {
           <p className="text-xs text-muted-foreground uppercase tracking-widest mb-10">
             About
           </p>
-          <h2 className="text-3xl md:text-4xl font-medium leading-tight tracking-tight mb-8">
+          <h2 className="font-display text-3xl md:text-4xl font-medium leading-tight tracking-tight mb-8">
             Designer who codes &amp;<br/> Engineer who designs
           </h2>
           <p className="text-muted-foreground leading-relaxed">

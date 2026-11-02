@@ -95,7 +95,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <p className="text-[clamp(2rem,3.8vw,4rem)] font-medium leading-[1.2] tracking-tight text-white">
+        <p className="font-display text-[clamp(2rem,3.8vw,4rem)] font-medium leading-[1.2] tracking-tight text-white">
           <Phrase id="din-cohen" onHover={setActiveNote}>Din Cohen</Phrase>
           {" "}is a {" "}
           <Phrase id="experienced" onHover={setActiveNote}>product designer</Phrase>
