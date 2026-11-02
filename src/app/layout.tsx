@@ -19,11 +19,9 @@ export const metadata: Metadata = {
       "Product designer and engineer who designs and builds AI-powered products end to end.",
     url: "https://dincohen.com",
     siteName: "Dinco",
-    images: [{ url: "/images/hero/din-headshot.png", alt: "Din Cohen" }],
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/hero/din-headshot.png"],
   },
 };
 
