@@ -10,6 +10,10 @@ export default async function Image() {
   const headshot = await readFile(
     path.join(process.cwd(), "public/images/hero/din-headshot.png")
   );
+  const font = await readFile(
+    path.join(process.cwd(), "src/app/fonts/BricolageGrotesque-Medium.woff")
+  );
+  const inter = await readFile(path.join(process.cwd(), "src/app/fonts/Inter-Regular.woff"));
   const src = `data:image/png;base64,${headshot.toString("base64")}`;
 
   return new ImageResponse(
@@ -22,6 +26,7 @@ export default async function Image() {
           alignItems: "flex-end",
           justifyContent: "space-between",
           background: "#000",
+          fontFamily: "Inter",
           color: "#fff",
           padding: "0 0 0 80px",
         }}
@@ -30,7 +35,7 @@ export default async function Image() {
           <div style={{ fontSize: 28, letterSpacing: 4, textTransform: "uppercase", opacity: 0.5 }}>
             Product Designer
           </div>
-          <div style={{ fontSize: 96, fontWeight: 600, letterSpacing: -3, marginTop: 16 }}>
+          <div style={{ fontFamily: "Bricolage", fontSize: 96, fontWeight: 500, letterSpacing: -3, marginTop: 16 }}>
             Din Cohen
           </div>
           <div style={{ fontSize: 32, opacity: 0.7, marginTop: 24, maxWidth: 560, lineHeight: 1.35 }}>
@@ -41,6 +46,12 @@ export default async function Image() {
         <img src={src} alt="" width={504} height={630} />
       </div>
     ),
-    size
+    {
+      ...size,
+      fonts: [
+        { name: "Inter", data: inter, weight: 400, style: "normal" },
+        { name: "Bricolage", data: font, weight: 500, style: "normal" },
+      ],
+    }
   );
 }

@@ -14,7 +14,7 @@ export default function Contact() {
           <p className="text-xs text-muted-foreground uppercase tracking-widest mb-10">
             Contact
           </p>
-          <h2 className="text-3xl md:text-4xl font-medium leading-tight tracking-tight">
+          <h2 className="font-display text-3xl md:text-4xl font-medium leading-tight tracking-tight">
             Let&apos;s work together.
           </h2>
           <p className="mt-6 text-muted-foreground leading-relaxed">

@@ -40,7 +40,7 @@ export default function ProjectCarousel({ slides }: { slides: Slide[] }) {
                 // eslint-disable-next-line @next/next/no-img-element
                 <img src={s.image} alt={s.title} className="max-w-full max-h-full object-contain" />
               ) : (
-                <p className="px-8 md:px-24 text-3xl md:text-5xl font-medium tracking-tight leading-tight text-center">
+                <p className="font-display px-8 md:px-24 text-3xl md:text-5xl font-medium tracking-tight leading-tight text-center">
                   {s.title}
                 </p>
               )}
@@ -72,7 +72,7 @@ export default function ProjectCarousel({ slides }: { slides: Slide[] }) {
       </div>
 
       <div className="max-w-2xl mx-auto text-center mt-8">
-        {slide.image && <h3 className="text-lg font-medium tracking-tight mb-2">{slide.title}</h3>}
+        {slide.image && <h3 className="font-display text-lg font-medium tracking-tight mb-2">{slide.title}</h3>}
         <p className="text-sm text-muted-foreground leading-relaxed">{slide.caption}</p>
       </div>
 

@@ -71,7 +71,7 @@ export default async function ProjectPage({ params }: Props) {
         >
           <div className="flex flex-col justify-between gap-10 px-6 md:px-12 py-8 md:w-[36%] md:shrink-0">
             <div className="flex flex-col items-start gap-4">
-              <h1 className={`text-xl md:text-2xl font-medium tracking-tight ${textMain}`}>
+              <h1 className={`font-display text-xl md:text-2xl font-medium tracking-tight ${textMain}`}>
                 {project.title}
               </h1>
               {project.externalHref && (
@@ -157,7 +157,7 @@ export default async function ProjectPage({ params }: Props) {
           <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
             <div>
               <p className="text-xs text-muted-foreground uppercase tracking-widest mb-3">What&apos;s next</p>
-              <h2 className="text-2xl md:text-3xl font-medium tracking-tight">Interested in working together?</h2>
+              <h2 className="font-display text-2xl md:text-3xl font-medium tracking-tight">Interested in working together?</h2>
             </div>
             <div className="flex items-center gap-4 shrink-0">
               <a
