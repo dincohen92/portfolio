@@ -45,7 +45,6 @@ const translateY = (y: number) => `translate3d(0, calc(var(--u) * ${y}), 0)`;
 export default function Hero() {
   const sectionRef = useRef<HTMLElement>(null);
   const layerRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const mobileImgRef = useRef<HTMLImageElement>(null);
   const [scrollNote, setScrollNote] = useState<NoteId | null>(null);
   const [hoverNote, setHoverNote] = useState<NoteId | null>(null);
 
@@ -63,9 +62,6 @@ export default function Hero() {
       layerRefs.current.forEach((el, i) => {
         if (el) el.style.transform = translateY(lerpStops(LAYERS[i].y, p));
       });
-      if (mobileImgRef.current) {
-        mobileImgRef.current.style.transform = `translateY(min(${Math.max(0, -rect.top) * 0.3}px, 16%))`;
-      }
       // Nothing highlighted for the first bit of scroll, then each word in turn.
       setScrollNote(p < 0.1 ? null : ORDER[p < 0.4 ? 0 : p < 0.7 ? 1 : 2]);
     };
@@ -92,25 +88,13 @@ export default function Hero() {
     <section ref={sectionRef} className="relative bg-black h-[300vh]">
       <div className="sticky top-0 h-screen overflow-hidden flex flex-col justify-end pb-20 section-padding">
 
-        {/* ── Mobile profile image ─────────────────────────────────────────── */}
-        <div className="md:hidden absolute top-0 right-0 h-[55vw] w-[55vw] overflow-hidden pointer-events-none opacity-30">
-          <img
-            ref={mobileImgRef}
-            src="/images/hero/din-headshot.png"
-            alt="Portrait of Din Cohen"
-            className="absolute left-0 w-full h-[120%] -top-[20%] object-cover object-top"
-          />
-        </div>
-
         {/* ── Layered CMYK shapes + photo ──────────────────────────────────── */}
         <div
-          className="hidden md:block absolute right-[4.4vw] pointer-events-none"
+          className="absolute right-0 top-[6vh] opacity-60 md:opacity-100 md:top-auto md:right-[4.4vw] md:bottom-[calc(var(--u)*50)] pointer-events-none [--u:calc(100vw/690)] md:[--u:calc(min(46vw,690px)/690)]"
           style={
             {
-              "--u": `calc(min(46vw, ${STAGE_W}px) / ${STAGE_W})`,
               width: `calc(var(--u) * ${STAGE_W})`,
               height: `calc(var(--u) * ${STAGE_H})`,
-              bottom: "calc(var(--u) * 50)",
             } as CSSProperties
           }
         >
@@ -120,7 +104,7 @@ export default function Hero() {
               ref={(el) => {
                 layerRefs.current[i] = el;
               }}
-              className="absolute top-0 will-change-transform"
+              className={`absolute top-0 will-change-transform ${layer.key === "photo" ? "hidden md:block" : ""}`}
               style={{
                 left: `calc(var(--u) * ${layer.x})`,
                 width: `calc(var(--u) * ${layer.w})`,

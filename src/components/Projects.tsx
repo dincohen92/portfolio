@@ -52,14 +52,6 @@ function CardContent({ project }: { project: Project }) {
       {/* Base: always solid color */}
       <div className="absolute inset-0" style={{ backgroundColor: project.coverBg }} />
 
-      {/* Image: mobile only, since there is no hover there */}
-      {project.images[0] && (
-        <div
-          className="absolute inset-0 bg-center bg-cover opacity-20 md:hidden"
-          style={{ backgroundImage: `url("${project.images[0]}")` }}
-        />
-      )}
-
       {/* Spinning 3D object — fades out on hover as the logo takes its place */}
       {project.model3d && (
         <div className="absolute inset-0 pointer-events-none transition-opacity duration-300 md:group-hover:opacity-0">
