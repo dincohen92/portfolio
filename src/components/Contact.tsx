@@ -18,7 +18,7 @@ export default function Contact() {
             Let&apos;s work together.
           </h2>
           <p className="mt-6 text-muted-foreground leading-relaxed">
-            Open to product design opportunities. Please reach out.
+            Open to design engineering opportunities. Please reach out.
           </p>
         </div>
 

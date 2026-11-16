@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { readFile } from "node:fs/promises";
 import path from "node:path";
 
-export const alt = "Din Cohen — Product Designer";
+export const alt = "Din Cohen — Design Engineer";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -33,7 +33,7 @@ export default async function Image() {
       >
         <div style={{ display: "flex", flexDirection: "column", alignSelf: "center" }}>
           <div style={{ fontSize: 28, letterSpacing: 4, textTransform: "uppercase", opacity: 0.5 }}>
-            Product Designer
+            Design Engineer
           </div>
           <div style={{ fontFamily: "Bricolage", fontSize: 96, fontWeight: 500, letterSpacing: -3, marginTop: 16 }}>
             Din Cohen
