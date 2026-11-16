@@ -6,11 +6,11 @@ type NoteId = "din-cohen" | "design-engineer" | "for-humans";
 const NOTES: Record<NoteId, { color: string; note: string }> = {
   "din-cohen": {
     color: "#00ffff",
-    note: "When not designing, you'll find me hiking the trails of the Pacific Northwest, staring at buildings, and sometimes even climbing them.",
+    note: "When not designing, you'll find me hiking trails in the Sierras, staring at big rocks, and sometimes even climbing them.",
   },
   "design-engineer": {
     color: "#ff00ff",
-    note: "Led design and engineering at Apex Semi (acquired by Cadence), built AI infrastructure for PlanwithCoCo, and contributed to computer vision at Zira.",
+    note: "I led design and engineering at Apex Semi, built the AI infrastructure for PlanwithCoCo, and ran marketing and product research at Zira.",
   },
   "for-humans": {
     color: "#ffff00",
@@ -163,10 +163,6 @@ export default function Hero() {
             <Phrase id="for-humans" active={activeNote === "for-humans"} onHover={setHoverNote}>for humans</Phrase>
             .
           </p>
-        </div>
-
-        <div className="absolute bottom-8 right-8 md:right-20 text-xs text-white/40 tracking-widest uppercase rotate-90 origin-right">
-          Scroll
         </div>
       </div>
     </section>
