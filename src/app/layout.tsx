@@ -14,12 +14,12 @@ const bricolage = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
-  title: "Din Cohen — Design Engineer",
+  title: "Din Cohen | Design Engineer",
   metadataBase: new URL("https://dincohen.com"),
   description:
     "Design engineer who designs and builds AI-powered products end to end.",
   openGraph: {
-    title: "Din Cohen — Design Engineer",
+    title: "Din Cohen | Design Engineer",
     description:
       "Design engineer who designs and builds AI-powered products end to end.",
     url: "https://dincohen.com",
